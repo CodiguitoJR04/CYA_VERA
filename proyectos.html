@@ -1,14 +1,39 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" itemscope itemtype="https://schema.org/Organization">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Proyectos - Cercas & Alambrados FBakr</title>
-  <meta name="description" content="Galería de nuestros proyectos de cercas residenciales, industriales y mallas ciclónicas." />
+  <title>Proyectos de Cercas y Alambrados | Cercas & Alambrados VERA</title>
+  <meta name="description" content="Galería de proyectos realizados: cercas residenciales, industriales, mallas ciclónicas y concertina. Cotiza tu proyecto de seguridad perimetral." />
+  <meta name="keywords" content="proyectos cercas, cercas residenciales, malla ciclónica, alambrado de púas, cerca eléctrica, instalación cercas, seguridad perimetral" />
+  <link rel="canonical" href="https://www.tudominio.com/proyectos.html" />
+  
+  <!-- Schema.org markup -->
+  <meta itemprop="name" content="Cercas & Alambrados VERA">
+  <meta itemprop="description" content="Especialistas en instalación de cercas residenciales e industriales, mallas ciclónicas y concertina.">
+  <meta itemprop="image" content="https://images.unsplash.com/photo-1542317853-0d885b9b9c5a?q=80&w=1600&auto=format&fit=crop">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Proyectos de Cercas y Alambrados | Cercas & Alambrados VERA" />
+  <meta property="og:description" content="Galería de proyectos realizados: cercas residenciales, industriales, mallas ciclónicas y concertina." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1542317853-0d885b9b9c5a?q=80&w=1600&auto=format&fit=crop" />
+  <meta property="og:url" content="https://www.tudominio.com/proyectos.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Cercas & Alambrados VERA" />
+  <meta property="og:locale" content="es_MX" />
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Proyectos de Cercas y Alambrados | Cercas & Alambrados VERA">
+  <meta name="twitter:description" content="Galería de proyectos realizados: cercas residenciales, industriales, mallas ciclónicas y concertina.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1542317853-0d885b9b9c5a?q=80&w=1600&auto=format&fit=crop">
+  
+  <!-- Preconnect and Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="src/css/output.css">
+  
   <style>
     :root{
       --brand:#10B981; /* verde confianza */
@@ -21,14 +46,91 @@
     .soft-shadow{box-shadow:0 6px 24px rgba(2,6,23,0.08), 0 2px 8px rgba(2,6,23,0.06)}
     .project-card {transition: transform 0.3s ease, box-shadow 0.3s ease;}
     .project-card:hover {transform: translateY(-5px);}
+    
+    .project-button {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background-color: var(--brand);
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      margin-top: 15px;
+    }
+    .project-button:hover {
+      background-color: #0da271;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+    }
+    .project-image-link {
+      display: block;
+      overflow: hidden;
+    }
+    .project-image {
+      transition: transform 0.5s ease;
+    }
+    .project-card:hover .project-image {
+      transform: scale(1.05);
+    }
+    
+    /* Schema.org hidden markup */
+    .schema-hidden {
+      display: none;
+    }
   </style>
 </head>
 <body class="bg-[var(--bg)] text-[var(--ink)]">
+  <!-- Schema.org structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Cercas & Alambrados VERA",
+    "url": "https://www.tudominio.com",
+    "logo": "https://www.tudominio.com/logo.png",
+    "description": "Especialistas en instalación de cercas residenciales e industriales, mallas ciclónicas y concertina.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Ciudad de México",
+      "addressCountry": "MX"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+52-55-0000-0000",
+      "contactType": "customer service",
+      "areaServed": "MX",
+      "availableLanguage": "es"
+    },
+    "sameAs": []
+  }
+  </script>
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Inicio",
+      "item": "https://www.tudominio.com/index.html"
+    },{
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Proyectos",
+      "item": "https://www.tudominio.com/proyectos.html"
+    }]
+  }
+  </script>
+
   <!-- Header -->
   <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-slate-100">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div class="flex h-16 items-center justify-between">
-        <a href="index.html" class="flex items-center gap-3">
+        <a href="index.html" class="flex items-center gap-3" aria-label="Cercas & Alambrados VERA - Inicio">
           <!-- Logo minimal: poste + alambre -->
           <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-[var(--brand)]">
             <rect x="3" y="3" width="3" height="18" rx="1" fill="currentColor"/>
@@ -37,15 +139,16 @@
           <span class="font-extrabold tracking-tight text-lg">Cercas & Alambrados <span class="text-[var(--brand)]">VERA</span></span>
         </a>
 
-        <nav class="hidden md:flex items-center gap-8 text-sm">
-          <a href="protitipo_web.html" class="hover:text-[var(--brand)] transition">Inicio</a>
+        <nav class="hidden md:flex items-center gap-8 text-sm" aria-label="Navegación principal">
+          <a href="index.html" class="hover:text-[var(--brand)] transition">Inicio</a>
           <a href="nosotros.html" class="hover:text-[var(--brand)] transition">Nosotros</a>
           <a href="servicios.html" class="hover:text-[var(--brand)] transition">Servicios</a>
+          <a href="proyectos.html" class="hover:text-[var(--brand)] transition font-semibold text-[var(--brand)]">Proyectos</a>
           <a href="contacto.html" class="hover:text-[var(--brand)] transition">Contacto</a>
           <a href="#cta" class="inline-flex items-center rounded-xl bg-[var(--brand)] px-4 py-2 font-semibold text-white hover:opacity-90 transition soft-shadow">Cotiza ahora</a>
         </nav>
 
-        <button id="menuBtn" class="md:hidden inline-flex items-center justify-center rounded-xl border px-3 py-2 border-slate-200">
+        <button id="menuBtn" class="md:hidden inline-flex items-center justify-center rounded-xl border px-3 py-2 border-slate-200" aria-expanded="false" aria-controls="mobileMenu">
           <span class="sr-only">Abrir menú</span>
           <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
         </button>
@@ -54,183 +157,112 @@
     <!-- Mobile menu -->
     <div id="mobileMenu" class="md:hidden hidden border-t border-slate-100 bg-white">
       <div class="mx-auto max-w-7xl px-4 py-3 flex flex-col gap-2 text-sm">
-        <a href="protitipo_web.html" class="hover:text-[var(--brand)] transition">Inicio</a>
-          <a href="nosotros.html" class="hover:text-[var(--brand)] transition">Nosotros</a>
-          <a href="servicios.html" class="hover:text-[var(--brand)] transition">Servicios</a>
-          <a href="contacto.html" class="hover:text-[var(--brand)] transition">Contacto</a>
+        <a href="index.html" class="hover:text-[var(--brand)] transition">Inicio</a>
+        <a href="nosotros.html" class="hover:text-[var(--brand)] transition">Nosotros</a>
+        <a href="servicios.html" class="hover:text-[var(--brand)] transition">Servicios</a>
+        <a href="proyectos.html" class="hover:text-[var(--brand)] transition font-semibold text-[var(--brand)]">Proyectos</a>
+        <a href="contacto.html" class="hover:text-[var(--brand)] transition">Contacto</a>
         <a href="#cta" class="inline-flex items-center justify-center rounded-xl bg-[var(--brand)] px-4 py-2 font-semibold text-white mt-1">Cotiza ahora</a>
       </div>
     </div>
   </header>
 
   <!-- Hero Proyectos -->
-  <section class="relative overflow-hidden">
+  <section class="relative overflow-hidden" aria-labelledby="hero-title">
     <div class="absolute inset-0 -z-10">
       <!-- Imagen de fondo de stock sugerida -->
-      <div class="h-full w-full bg-cover bg-center" style="background-image:url('https://images.unsplash.com/photo-1542317853-0d885b9b9c5a?q=80&w=1600&auto=format&fit=crop'); filter:contrast(0.95)"></div>
+      <div class="h-full w-full bg-cover bg-center" style="background-image:url('https://images.unsplash.com/photo-1542317853-0d885b9b9c5a?q=80&w=1600&auto=format&fit=crop'); filter:contrast(0.95)" role="img" aria-label="Instalación profesional de cerca perimetral"></div>
       <div class="absolute inset-0 bg-black/40"></div>
     </div>
 
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24 sm:py-28 lg:py-32 text-white">
       <div class="max-w-2xl">
         <span class="inline-block rounded-full bg-white/10 px-3 py-1 text-xs font-medium ring-1 ring-white/30 mb-4">Nuestro trabajo</span>
-        <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight">Proyectos realizados</h1>
-        <p class="mt-4 text-white/90 max-w-xl">Una muestra de nuestro trabajo en instalación de cercas residenciales, industriales y mallas de seguridad.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Categorías -->
-  <section id="categorias" class="py-16">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-      <div class="max-w-2xl mx-auto text-center">
-        <h2 class="text-2xl sm:text-3xl font-bold">Tipos de proyectos</h2>
-        <p class="mt-2 text-slate-600">Especialistas en diferentes tipos de cercas y alambrados</p>
-      </div>
-      <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
-        <a href="#residencial" class="bg-white rounded-2xl p-6 border border-slate-100 soft-shadow project-card block hover:no-underline">
-          <div class="h-12 w-12 rounded-xl bg-emerald-50 flex items-center justify-center mb-4 text-[var(--brand)]">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
-          </div>
-          <h3 class="font-semibold text-lg">Cercas residenciales</h3>
-          <p class="mt-2 text-slate-600">Protección y estética para hogares, condominios y fraccionamientos.</p>
-          <div class="mt-4 flex items-center text-[var(--brand)] font-medium">
-            <span>Ver proyectos</span>
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
-            </svg>
-          </div>
-        </a>
-        <a href="#industrial" class="bg-white rounded-2xl p-6 border border-slate-100 soft-shadow project-card block hover:no-underline">
-          <div class="h-12 w-12 rounded-xl bg-blue-50 flex items-center justify-center mb-4 text-[var(--accent)]">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3h18v6H3zM3 15h18v6H3z"/></svg>
-          </div>
-          <h3 class="font-semibold text-lg">Cercas industriales</h3>
-          <p class="mt-2 text-slate-600">Seguridad perimetral para naves industriales, bodegas y parques.</p>
-          <div class="mt-4 flex items-center text-[var(--accent)] font-medium">
-            <span>Ver proyectos</span>
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
-            </svg>
-          </div>
-        </a>
-        <a href="#mallas" class="bg-white rounded-2xl p-6 border border-slate-100 soft-shadow project-card block hover:no-underline">
-          <div class="h-12 w-12 rounded-xl bg-slate-50 flex items-center justify-center mb-4 text-slate-700">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 7l7-4 7 4v10l-7 4-7-4z"/></svg>
-          </div>
-          <h3 class="font-semibold text-lg">Mallas de seguridad</h3>
-          <p class="mt-2 text-slate-600">Malla ciclónica, concertina y sistemas de seguridad especializados.</p>
-          <div class="mt-4 flex items-center text-slate-700 font-medium">
-            <span>Ver proyectos</span>
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
-            </svg>
-          </div>
-        </a>
+        <h1 id="hero-title" class="text-4xl sm:text-5xl font-extrabold leading-tight">Proyectos realizados</h1>
+        <p class="mt-4 text-white/90 max-w-xl">Una muestra de nuestro trabajo en instalación de cercas residenciales, industriales y mallas de seguridad. Expertos en cercas eléctricas, mallas ciclónicas y concertina.</p>
       </div>
     </div>
   </section>
 
   <!-- Galería Residencial -->
-  <section id="residencial" class="py-16 bg-white">
+  <section id="residencial" class="py-16 bg-white" aria-labelledby="residencial-title">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div class="max-w-2xl">
-        <h2 class="text-2xl sm:text-3xl font-bold">Proyectos residenciales</h2>
-        <p class="mt-2 text-slate-600">Cercas que combinan seguridad, durabilidad y estética para hogares.</p>
+        <h2 id="residencial-title" class="text-2xl sm:text-3xl font-bold">Los hechos son mas que mil palabras</h2>
+        <p class="mt-2 text-slate-600">Cercas que combinan seguridad, durabilidad y estética para hogares. Instalamos cercas eléctricas, mallas ciclónicas, concertina y alambrado de púas.</p>
       </div>
       <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div class="rounded-2xl overflow-hidden soft-shadow project-card">
-          <img class="w-full h-48 object-cover" src="https://images.unsplash.com/photo-1600803907087-f56d462fd26b?q=80&w=800&auto=format&fit=crop" alt="Cerca residencial moderna">
+        <!-- Proyecto 1 -->
+        <article class="rounded-2xl overflow-hidden soft-shadow project-card">
+          <a href="proyecto-residencial-1.html" class="project-image-link">
+            <img class="w-full h-48 object-cover project-image" src="https://images.unsplash.com/photo-1600803907087-f56d462fd26b?q=80&w=800&auto=format&fit=crop" alt="Instalación de cerca eléctrica residencial con malla ciclónica" loading="lazy">
+          </a>
           <div class="p-4">
-            <h3 class="font-semibold">Residencia Las Lomas</h3>
-            <p class="text-sm text-slate-600 mt-1">Cerca perimetral de malla ciclónica con portón eléctrico.</p>
+            <h3 class="font-semibold">Alambrado de Puas</h3>
+            <p class="text-sm text-slate-600 mt-1">Cerca perimetral de malla ciclónica con portón eléctrico para máxima seguridad en viviendas.</p>
+            <a href="proyectos/proyecto-alambrado-puas.html" class="project-button">
+              Ver proyecto completo
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+              </svg>
+            </a>
           </div>
-        </div>
-        <div class="rounded-2xl overflow-hidden soft-shadow project-card">
-          <img class="w-full h-48 object-cover" src="https://images.unsplash.com/photo-1616594039964-44eeaf39c2ab?q=80&w=800&auto=format&fit=crop" alt="Cerca para condominio">
+        </article>
+        
+        <!-- Proyecto 2 -->
+        <article class="rounded-2xl overflow-hidden soft-shadow project-card">
+          <a href="proyecto-residencial-2.html" class="project-image-link">
+            <img class="w-full h-48 object-cover project-image" src="https://images.unsplash.com/photo-1616594039964-44eeaf39c2ab?q=80&w=800&auto=format&fit=crop" alt="Cerramiento con malla ciclónica para condominio residencial" loading="lazy">
+          </a>
           <div class="p-4">
-            <h3 class="font-semibold">Condominio Santa Fe</h3>
-            <p class="text-sm text-slate-600 mt-1">Cerramiento completo para conjunto residencial con acceso controlado.</p>
+            <h3 class="font-semibold">Mallas Electrica Proyectos</h3>
+            <p class="text-sm text-slate-600 mt-1">Cerramiento completo para conjunto residencial con acceso controlado y máxima seguridad.</p>
+            <a href="proyectos/proyectos-malla-electrica.html" class="project-button">
+              Ver proyecto completo
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+              </svg>
+            </a>
           </div>
-        </div>
-        <div class="rounded-2xl overflow-hidden soft-shadow project-card">
-          <img class="w-full h-48 object-cover" src="https://images.unsplash.com/photo-1582641098342de37fb24c0c34?q=80&w=800&auto=format&fit=crop" alt="Cerca decorativa">
+        </article>
+        
+        <!-- Proyecto 3 -->
+        <article class="rounded-2xl overflow-hidden soft-shadow project-card">
+          <a href="proyecto-residencial-3.html" class="project-image-link">
+            <img class="w-full h-48 object-cover project-image" src="https://images.unsplash.com/photo-1582641098342-de37fb24c0c3?q=80&w=800&auto=format&fit=crop" alt="Cerca de malla concertina para protección perimetral" loading="lazy">
+          </a>
           <div class="p-4">
-            <h3 class="font-semibold">Residencia Bosques</h3>
-            <p class="text-sm text-slate-600 mt-1">Cerca decorativa de herrería con detalles personalizados.</p>
+            <h3 class="font-semibold">Malla Concertina Residencial</h3>
+            <p class="text-sm text-slate-600 mt-1">Sistema de seguridad perimetral con malla concertina para protección máxima en viviendas.</p>
+            <a href="/proyectos/proyectos-malla-concertina.html" class="project-button">
+              Ver proyecto completo
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+              </svg>
+            </a>
           </div>
-        </div>
+        </article>
+
+        <!-- Proyecto 4 -->
+        <article class="rounded-2xl overflow-hidden soft-shadow project-card">
+          <a href="proyecto-residencial-4.html" class="project-image-link">
+            <img class="w-full h-48 object-cover project-image" src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?q=80&w=800&auto=format&fit=crop" alt="Alambrado de púas para cerco perimetral residencial" loading="lazy">
+          </a>
+          <div class="p-4">
+            <h3 class="font-semibold">Proyectos Malla Ciclonica</h3>
+            <p class="text-sm text-slate-600 mt-1">Solución económica y efectiva de seguridad con alambrado de púas para perímetros residenciales.</p>
+            <a href="proyectos/proyectos-malla-ciclonica.html" class="project-button">
+              Ver proyecto completo
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+        </article>
       </div>
     </div>
   </section>
 
-  <!-- Galería Industrial -->
-  <section id="industrial" class="py-16">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-      <div class="max-w-2xl">
-        <h2 class="text-2xl sm:text-3xl font-bold">Proyectos industriales</h2>
-        <p class="mt-2 text-slate-600">Soluciones de seguridad perimetral para entornos industriales y comerciales.</p>
-      </div>
-      <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div class="rounded-2xl overflow-hidden soft-shadow project-card">
-          <img class="w-full h-48 object-cover" src="https://images.unsplash.com/photo-1554592896-8b06473f991c?q=80&w=800&auto=format&fit=crop" alt="Cerca industrial">
-          <div class="p-4">
-            <h3 class="font-semibold">Parque Industrial Norte</h3>
-            <p class="text-sm text-slate-600 mt-1">Cerco perimetral con malla ciclónica y concertina para parque industrial.</p>
-          </div>
-        </div>
-        <div class="rounded-2xl overflow-hidden soft-shadow project-card">
-          <img class="w-full h-48 object-cover" src="https://images.unsplash.com/photo-1581291518635-a6a7d119bb32?q=80&w=800&auto=format&fit=crop" alt="Bodega con cerca">
-          <div class="p-4">
-            <h3 class="font-semibold">Bodegas Logística MX</h3>
-            <p class="text-sm text-slate-600 mt-1">Sistema de seguridad perimetral con portones corredizos automatizados.</p>
-          </div>
-        </div>
-        <div class="rounded-2xl overflow-hidden soft-shadow project-card">
-          <img class="w-full h-48 object-cover" src="https://images.unsplash.com/photo-1572021335461-84bb5ddb90c2?q=80&w=800&auto=format&fit=crop" alt="Cerca con concertina">
-          <div class="p-4">
-            <h3 class="font-semibold">Centro de Distribución</h3>
-            <p class="text-sm text-slate-600 mt-1">Cerca de alta seguridad con triple concertina y sistema de vigilancia.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Galería Mallas -->
-  <section id="mallas" class="py-16 bg-white">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-      <div class="max-w-2xl">
-        <h2 class="text-2xl sm:text-3xl font-bold">Proyectos con mallas de seguridad</h2>
-        <p class="mt-2 text-slate-600">Instalación profesional de mallas ciclónicas y sistemas de seguridad.</p>
-      </div>
-      <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div class="rounded-2xl overflow-hidden soft-shadow project-card">
-          <img class="w-full h-48 object-cover" src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?q=80&w=800&auto=format&fit=crop" alt="Malla ciclónica">
-          <div class="p-4">
-            <h3 class="font-semibold">Escuela Primaria Federal</h3>
-            <p class="text-sm text-slate-600 mt-1">Cerramiento con malla ciclónica para área de juegos y perímetro.</p>
-          </div>
-        </div>
-        <div class="rounded-2xl overflow-hidden soft-shadow project-card">
-          <img class="w-full h-48 object-cover" src="https://images.unsplash.com/photo-1596484552975-20ee4f1d8f0e?q=80&w=800&auto=format&fit=crop" alt="Malla con marco">
-          <div class="p-4">
-            <h3 class="font-semibold">Cancha Deportiva Municipal</h3>
-            <p class="text-sm text-slate-600 mt-1">Malla para contención de balones con marco tubular reforzado.</p>
-          </div>
-        </div>
-        <div class="rounded-2xl overflow-hidden soft-shadow project-card">
-          <img class="w-full h-48 object-cover" src="https://images.unsplash.com/photo-1621547290163-3b76bceae015?q=80&w=800&auto=format&fit=crop" alt="Concertina">
-          <div class="p-4">
-            <h3 class="font-semibold">Planta de Manufactura</h3>
-            <p class="text-sm text-slate-600 mt-1">Sistema de seguridad con concertina y sensores de movimiento.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Proceso de trabajo -->
   <section class="py-16">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div class="max-w-2xl mx-auto text-center">
@@ -263,15 +295,15 @@
   </section>
 
   <!-- CTA -->
-  <section id="cta" class="py-14">
+  <section id="cta" class="py-14 bg-slate-50" aria-labelledby="cta-title">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div class="rounded-3xl bg-gradient-to-r from-emerald-500 to-blue-500 p-1 soft-shadow">
         <div class="rounded-3xl bg-white p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
-            <h3 class="text-2xl font-extrabold">¿Te gustó nuestro trabajo?</h3>
-            <p class="mt-2 text-slate-600">Contáctanos para cotizar tu proyecto de cerco perimetral.</p>
+            <h3 id="cta-title" class="text-2xl font-extrabold">¿Te gustó nuestro trabajo?</h3>
+            <p class="mt-2 text-slate-600">Contáctanos para cotizar tu proyecto de cerco perimetral. Presupuesto sin compromiso.</p>
           </div>
-          <a href="index.html#contacto" class="inline-flex items-center rounded-xl bg-[var(--brand)] px-6 py-3 font-semibold text-white soft-shadow">Solicitar cotización</a>
+          <a href="contacto.html" class="inline-flex items-center rounded-xl bg-[var(--brand)] px-6 py-3 font-semibold text-white soft-shadow hover:opacity-90 transition">Solicitar cotización</a>
         </div>
       </div>
     </div>
@@ -301,27 +333,33 @@
           <ul class="mt-3 space-y-2 text-slate-300">
             <li><a href="index.html" class="hover:underline">Inicio</a></li>
             <li><a href="nosotros.html" class="hover:underline">Nosotros</a></li>
-            <li><a href="#residencial" class="hover:underline">Proyectos Residenciales</a></li>
-            <li><a href="#industrial" class="hover:underline">Proyectos Industriales</a></li>
+            <li><a href="servicios.html" class="hover:underline">Servicios</a></li>
+            <li><a href="proyectos.html" class="hover:underline">Proyectos</a></li>
+            <li><a href="contacto.html" class="hover:underline">Contacto</a></li>
           </ul>
         </div>
       </div>
       <div class="mt-10 border-t border-white/10 pt-6 text-sm text-slate-400 flex flex-col sm:flex-row items-center justify-between gap-3">
-        <p>© 2025 VERA. Todos los derechos reservados.</p>
+        <p>© 2025 Cercas & Alambrados VERA. Todos los derechos reservados.</p>
         <p>Hecho con ❤ para tu seguridad perimetral.</p>
       </div>
     </div>
   </footer>
 
   <!-- Botón flotante WhatsApp -->
-  <a href="https://wa.me/525500000000?text=Hola,%20quiero%20cotizar%20una%20cerca" class="fixed bottom-5 right-5 inline-flex items-center justify-center w-14 h-14 rounded-full bg-emerald-500 text-white soft-shadow" aria-label="WhatsApp">
+  <a href="https://wa.me/525500000000?text=Hola,%20quiero%20cotizar%20una%20cerca" class="fixed bottom-5 right-5 inline-flex items-center justify-center w-14 h-14 rounded-full bg-emerald-500 text-white soft-shadow hover:bg-emerald-600 transition" aria-label="Contactar por WhatsApp">
     <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163A10.9 10.9 0 011.2 11.78C1.2 5.29 6.49 0 12.98 0a11.77 11.77 0 018.4 3.48 11.86 11.86 0 013.48 8.46c0 6.49-5.29 11.78-11.78 11.78a12 12 0 01-5.6-1.42L.057 24zM6.6 19.4a9.5 9.5 0 004.87 1.33c5.25 0 9.52-4.27 9.52-9.52A9.46 9.46 0 0012.96 1.7 9.62 9.62 0 003.43 11.2c0 1.68.45 3.29 1.31 4.7l-.86 3.15 2.72-.84z"/><path d="M17.5 14.2c-.1-.1-.6-.3-1.1-.5s-.7-.1-1 .2-.3.5-.5.8-.4.3-.7.2c-.4-.1-1.3-.5-2.2-1.4s-1.4-1.8-1.5-2.2.1-.5.2-.7.1-.3.2-.5c.1-.2 0-.4-.1-.5-.1-.1-1-.9-1.1-1s-.3-.1-.5 0-.5.2-.8.5c-.3.3-.6.6-.6 1s.1 1 .3 1.3c.3.5.7 1.1 1.3 1.7.6.6 1.2 1 1.7 1.3.5.3 1 .5 1.3.6.5.2 1 .2 1.3.1.4-.1 1.2-.5 1.4-1 .2-.5.2-.9.1-1z"/></svg>
   </a>
 
   <script>
+    // Menú móvil
     const btn = document.getElementById('menuBtn');
     const menu = document.getElementById('mobileMenu');
-    btn?.addEventListener('click',()=>menu.classList.toggle('hidden'));
+    btn?.addEventListener('click',()=>{
+      menu.classList.toggle('hidden');
+      const expanded = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', !expanded);
+    });
   </script>
 </body>
 </html>

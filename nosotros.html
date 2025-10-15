@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="src/css/output.css">
   <style>
     :root{
       --brand:#10B981; /* verde confianza */
@@ -35,8 +35,9 @@
           <span class="font-extrabold tracking-tight text-lg">Cercas & Alambrados <span class="text-[var(--brand)]">VERA</span></span>
         </a>
 
-        <nav class="hidden md:flex items-center gap-8 text-sm">
-          <a href="protitipo_web.html" class="hover:text-[var(--brand)] transition">Inicio</a>
+        <nav class="hidden md:flex items-center gap-8 text-sm" aria-label="Navegación principal">
+          <a href="index.html" class="hover:text-[var(--brand)] transition">Inicio</a>
+          <a href="nosotros.html" class="hover:text-[var(--brand)] transition font-semibold text-[var(--brand)]">Nosotros</a>
           <a href="servicios.html" class="hover:text-[var(--brand)] transition">Servicios</a>
           <a href="proyectos.html" class="hover:text-[var(--brand)] transition">Proyectos</a>
           <a href="contacto.html" class="hover:text-[var(--brand)] transition">Contacto</a>
@@ -175,42 +176,7 @@
     </div>
   </section>
 
-  <!-- Equipo -->
-  <section id="equipo" class="py-16 bg-white">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-      <div class="max-w-2xl mx-auto text-center">
-        <h2 class="text-2xl sm:text-3xl font-bold">Nuestro equipo</h2>
-        <p class="mt-2 text-slate-600">Profesionales dedicados a tu seguridad</p>
-      </div>
-      <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div class="text-center">
-          <div class="rounded-2xl overflow-hidden soft-shadow mx-auto w-48 h-48">
-            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=400&auto=format&fit=crop" alt="Francisco Bakr - Fundador" class="w-full h-full object-cover">
-          </div>
-          <h3 class="mt-4 font-semibold text-lg">Francisco Bakr</h3>
-          <p class="text-[var(--brand)]">Fundador & CEO</p>
-          <p class="mt-2 text-sm text-slate-600">Con más de 20 años de experiencia en el sector, Francisco supervisa cada proyecto personalmente.</p>
-        </div>
-        <div class="text-center">
-          <div class="rounded-2xl overflow-hidden soft-shadow mx-auto w-48 h-48">
-            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=400&auto=format&fit=crop" alt="Laura Martínez - Ingeniera" class="w-full h-full object-cover">
-          </div>
-          <h3 class="mt-4 font-semibold text-lg">Laura Martínez</h3>
-          <p class="text-[var(--brand)]">Ingeniera de Proyectos</p>
-          <p class="mt-2 text-sm text-slate-600">Especialista en diseño estructural y soluciones de seguridad perimetral para entornos industriales.</p>
-        </div>
-        <div class="text-center">
-          <div class="rounded-2xl overflow-hidden soft-shadow mx-auto w-48 h-48">
-            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=400&auto=format&fit=crop" alt="Carlos Rodríguez - Instalador" class="w-full h-full object-cover">
-          </div>
-          <h3 class="mt-4 font-semibold text-lg">Carlos Rodríguez</h3>
-          <p class="text-[var(--brand)]">Supervisor de Instalación</p>
-          <p class="mt-2 text-sm text-slate-600">Líder del equipo de instalación con más de 12 años de experiencia en el campo.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
+  
   <!-- CTA -->
   <section id="cta" class="py-14">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

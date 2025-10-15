@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Malla Ciclónica - Cercas & Alambrados FBakr</title>
-  <meta name="description" content="Instalación profesional de malla ciclónica para residencias, comercios e industrias. Cotiza hoy con FBakr." />
+  <title>Cerca con Concertina - Cercas & Alambrados FBakr</title>
+  <meta name="description" content="Instalación profesional de cercas con concertina para máxima seguridad perimetral. Cotiza hoy con FBakr." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/src/css/output.css">
   <style>
     :root{
       --brand:#10B981; /* verde confianza */
@@ -18,7 +18,6 @@
     }
     html{scroll-behavior:smooth}
     body{font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica Neue, Arial, "Apple Color Emoji", "Segoe UI Emoji"}
-    /* ligera mejora a sombras */
     .soft-shadow{box-shadow:0 6px 24px rgba(2,6,23,0.08), 0 2px 8px rgba(2,6,23,0.06)}
     .step-number {
       width: 32px;
@@ -33,6 +32,16 @@
       margin-right: 12px;
       flex-shrink: 0;
     }
+    .security-icon {
+      background: conic-gradient(
+        from 45deg,
+        #ef4444 0% 25%,
+        #3b82f6 25% 50%,
+        #10b981 50% 75%,
+        #f59e0b 75% 100%
+      );
+      border-radius: 50%;
+    }
   </style>
 </head>
 <body class="bg-[var(--bg)] text-[var(--ink)]">
@@ -40,7 +49,7 @@
   <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-slate-100">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div class="flex h-16 items-center justify-between">
-        <a href="index.html" class="flex items-center gap-3">
+        <a href="../index.html" class="flex items-center gap-3">
           <!-- Logo minimal: poste + alambre -->
           <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-[var(--brand)]">
             <rect x="3" y="3" width="3" height="18" rx="1" fill="currentColor"/>
@@ -50,10 +59,10 @@
         </a>
 
         <nav class="hidden md:flex items-center gap-8 text-sm">
-          <a href="servicios.html" class="hover:text-[var(--brand)] transition">Servicios</a>
-          <a href="proyectos.html" class="hover:text-[var(--brand)] transition">Proyectos</a>
-          <a href="nosotros.html" class="hover:text-[var(--brand)] transition">Nosotros</a>
-          <a href="contacto.html" class="hover:text-[var(--brand)] transition">Contacto</a>
+          <a href="../servicios.html" class="hover:text-[var(--brand)] transition">Servicios</a>
+          <a href="../proyectos.html" class="hover:text-[var(--brand)] transition">Proyectos</a>
+          <a href="../nosotros.html" class="hover:text-[var(--brand)] transition">Nosotros</a>
+          <a href="../contacto.html" class="hover:text-[var(--brand)] transition">Contacto</a>
           <a href="#cta" class="inline-flex items-center rounded-xl bg-[var(--brand)] px-4 py-2 font-semibold text-white hover:opacity-90 transition soft-shadow">Cotiza ahora</a>
         </nav>
 
@@ -66,28 +75,28 @@
     <!-- Mobile menu -->
     <div id="mobileMenu" class="md:hidden hidden border-t border-slate-100 bg-white">
       <div class="mx-auto max-w-7xl px-4 py-3 flex flex-col gap-2 text-sm">
-         <a href="servicios.html" class="hover:text-[var(--brand)] transition">Servicios</a>
-          <a href="proyectos.html" class="hover:text-[var(--brand)] transition">Proyectos</a>
-          <a href="nosotros.html" class="hover:text-[var(--brand)] transition">Nosotros</a>
-          <a href="contacto.html" class="hover:text-[var(--brand)] transition">Contacto</a>
+         <a href="../servicios.html" class="hover:text-[var(--brand)] transition">Servicios</a>
+          <a href="../proyectos.html" class="hover:text-[var(--brand)] transition">Proyectos</a>
+          <a href="../nosotros.html" class="hover:text-[var(--brand)] transition">Nosotros</a>
+          <a href="../contacto.html" class="hover:text-[var(--brand)] transition">Contacto</a>
         <a href="#cta" class="inline-flex items-center justify-center rounded-xl bg-[var(--brand)] px-4 py-2 font-semibold text-white mt-1">Cotiza ahora</a>
       </div>
     </div>
   </header>
 
-  <!-- Hero Malla Ciclónica -->
+  <!-- Hero Cerca con Concertina -->
   <section class="relative overflow-hidden">
     <div class="absolute inset-0 -z-10">
-      <!-- Imagen de fondo de malla ciclónica -->
-      <div class="h-full w-full bg-cover bg-center" style="background-image:url('https://images.unsplash.com/photo-1621841957884-1212fe2960e2?q=80&w=1600&auto=format&fit=crop'); filter:contrast(0.95)"></div>
-      <div class="absolute inset-0 bg-black/40"></div>
+      <!-- Imagen de fondo de cerca con concertina -->
+      <div class="h-full w-full bg-cover bg-center" style="background-image:url('https://images.unsplash.com/photo-161014509966-501c4d0d506d?q=80&w=1600&auto=format&fit=crop'); filter:contrast(0.95)"></div>
+      <div class="absolute inset-0 bg-black/50"></div>
     </div>
 
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24 sm:py-28 lg:py-32 text-white">
       <div class="max-w-2xl">
-        <span class="inline-block rounded-full bg-white/10 px-3 py-1 text-xs font-medium ring-1 ring-white/30 mb-4">Solución versátil y económica</span>
-        <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight">Malla Ciclónica de Alta Resistencia</h1>
-        <p class="mt-4 text-white/90 max-w-xl">Protección perimetral durable, económica y de rápida instalación para todo tipo de espacios.</p>
+        <span class="inline-block rounded-full bg-white/10 px-3 py-1 text-xs font-medium ring-1 ring-white/30 mb-4">Protección perimetral de máxima seguridad</span>
+        <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight">Cercas con Concertina Profesional</h1>
+        <p class="mt-4 text-white/90 max-w-xl">Sistemas de seguridad perimetral con concertina de acero galvanizado para la máxima protección de tus instalaciones.</p>
         <div class="mt-8 flex flex-col sm:flex-row gap-3">
           <a href="#cta" class="inline-flex items-center justify-center rounded-xl bg-[var(--brand)] px-6 py-3 font-semibold text-white soft-shadow">Solicitar cotización</a>
           <a href="#proceso" class="inline-flex items-center justify-center rounded-xl bg-white/10 px-6 py-3 font-semibold text-white ring-1 ring-white/30">Ver proceso</a>
@@ -96,22 +105,22 @@
     </div>
   </section>
 
-  <!-- Descripción Malla Ciclónica -->
+  <!-- Descripción Cerca con Concertina -->
   <section class="py-16">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div>
-          <h2 class="text-2xl sm:text-3xl font-bold">¿Qué es la Malla Ciclónica?</h2>
-          <p class="mt-4 text-slate-600">La malla ciclónica es un tipo de cerramiento metálico fabricado con alambre de acero galvanizado, que se caracteriza por su forma de rombo o hexagonal. Es una solución ideal para delimitar espacios con seguridad sin obstruir la visibilidad.</p>
-          <p class="mt-4 text-slate-600">Nuestra malla ciclónica está disponible en diferentes calibres y alturas, adaptándose a las necesidades específicas de cada proyecto, desde residencias hasta grandes áreas industriales.</p>
+          <h2 class="text-2xl sm:text-3xl font-bold">Cercas con Concertina de Alta Seguridad</h2>
+          <p class="mt-4 text-slate-600">Nuestras cercas con concertina representan la solución más efectiva para protección perimetral en entornos que requieren máxima seguridad. Combinamos mallas ciclónicas de alta resistencia con concertina de acero galvanizado para crear barreras infranqueables.</p>
+          <p class="mt-4 text-slate-600">La concertina, con sus cuchillas afiladas dispuestas en forma de espiral, actúa como un disuasivo visual y físico extremadamente efectivo contra intrusiones no deseadas.</p>
           <div class="mt-6 flex flex-col sm:flex-row gap-3">
             <a href="#ventajas" class="inline-flex items-center justify-center rounded-xl bg-[var(--accent)] px-5 py-2.5 font-semibold text-white">Ver ventajas</a>
             <a href="#proceso" class="inline-flex items-center justify-center rounded-xl border border-slate-300 px-5 py-2.5 font-semibold">Proceso de instalación</a>
           </div>
         </div>
         <div class="rounded-2xl overflow-hidden soft-shadow">
-          <!-- Espacio para imagen descriptiva de malla ciclónica -->
-          <img src="https://images.unsplash.com/photo-1634003234816-4eed8e044cb9?q=80&w=800&auto=format&fit=crop" alt="Malla ciclónica de cerca" class="w-full h-64 object-cover">
+          <!-- Espacio para imagen descriptiva de cerca con concertina -->
+          <img src="https://images.unsplash.com/photo-1585275074577-2fe5db4d6b6c?q=80&w=800&auto=format&fit=crop" alt="Cerca con concertina de seguridad" class="w-full h-64 object-cover">
         </div>
       </div>
     </div>
@@ -121,49 +130,49 @@
   <section id="ventajas" class="py-16 bg-white">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div class="max-w-2xl mx-auto text-center">
-        <h2 class="text-2xl sm:text-3xl font-bold">Ventajas de la Malla Ciclónica</h2>
-        <p class="mt-2 text-slate-600">Descubre por qué es la opción preferida para delimitación perimetral</p>
+        <h2 class="text-2xl sm:text-3xl font-bold">Ventajas de las Cercas con Concertina</h2>
+        <p class="mt-2 text-slate-600">Protección superior para tus áreas más críticas</p>
       </div>
       <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         <!-- Ventaja 1 -->
         <div class="bg-[var(--bg)] rounded-2xl p-6 border border-slate-100 soft-shadow">
-          <div class="h-12 w-12 rounded-xl bg-emerald-50 flex items-center justify-center mb-4 text-[var(--brand)]">
+          <div class="h-12 w-12 rounded-xl bg-red-50 flex items-center justify-center mb-4 text-red-600">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
             </svg>
           </div>
-          <h3 class="font-semibold text-lg">Económica</h3>
-          <p class="mt-2 text-slate-600">Ofrece la mejor relación costo-beneficio del mercado para cerramientos perimetrales.</p>
+          <h3 class="font-semibold text-lg">Protección Máxima</h3>
+          <p class="mt-2 text-slate-600">Barrera física infranqueable que disuade y previene intrusiones de manera efectiva.</p>
         </div>
         <!-- Ventaja 2 -->
         <div class="bg-[var(--bg)] rounded-2xl p-6 border border-slate-100 soft-shadow">
-          <div class="h-12 w-12 rounded-xl bg-emerald-50 flex items-center justify-center mb-4 text-[var(--brand)]">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
-            </svg>
-          </div>
-          <h3 class="font-semibold text-lg">Rápida Instalación</h3>
-          <p class="mt-2 text-slate-600">Se instala en menor tiempo comparado con otros tipos de cerramientos.</p>
-        </div>
-        <!-- Ventaja 3 -->
-        <div class="bg-[var(--bg)] rounded-2xl p-6 border border-slate-100 soft-shadow">
-          <div class="h-12 w-12 rounded-xl bg-emerald-50 flex items-center justify-center mb-4 text-[var(--brand)]">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
-            </svg>
-          </div>
-          <h3 class="font-semibold text-lg">Seguridad</h3>
-          <p class="mt-2 text-slate-600">Protección efectiva contra intrusos sin obstruir la visibilidad del área delimitada.</p>
-        </div>
-        <!-- Ventaja 4 -->
-        <div class="bg-[var(--bg)] rounded-2xl p-6 border border-slate-100 soft-shadow">
-          <div class="h-12 w-12 rounded-xl bg-emerald-50 flex items-center justify-center mb-4 text-[var(--brand)]">
+          <div class="h-12 w-12 rounded-xl bg-blue-50 flex items-center justify-center mb-4 text-blue-600">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
             </svg>
           </div>
-          <h3 class="font-semibold text-lg">Durabilidad</h3>
-          <p class="mt-2 text-slate-600">Resiste condiciones climáticas extremas gracias a su galvanizado que evita la oxidación.</p>
+          <h3 class="font-semibold text-lg">Larga Durabilidad</h3>
+          <p class="mt-2 text-slate-600">Fabricada con acero galvanizado que resiste la corrosión y condiciones climáticas extremas.</p>
+        </div>
+        <!-- Ventaja 3 -->
+        <div class="bg-[var(--bg)] rounded-2xl p-6 border border-slate-100 soft-shadow">
+          <div class="h-12 w-12 rounded-xl bg-green-50 flex items-center justify-center mb-4 text-green-600">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 14v6m-3-3h6M6 10h2a2 2 0 012 2v6a2 2 0 01-2 2H6a2 2 0 01-2-2v-6a2 2 0 012-2zm10-4a2 2 0 11-4 0 2 2 0 014 0zM4 6a2 2 0 100 4h16a2 2 0 100-4H4z" />
+            </svg>
+          </div>
+          <h3 class="font-semibold text-lg">Costo-Efectivo</h3>
+          <p class="mt-2 text-slate-600">Ofrece la mejor relación costo-beneficio para sistemas de seguridad perimetral de alta gama.</p>
+        </div>
+        <!-- Ventaja 4 -->
+        <div class="bg-[var(--bg)] rounded-2xl p-6 border border-slate-100 soft-shadow">
+          <div class="h-12 w-12 rounded-xl bg-purple-50 flex items-center justify-center mb-4 text-purple-600">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+          <h3 class="font-semibold text-lg">Instalación Rápida</h3>
+          <p class="mt-2 text-slate-600">Nuestro equipo especializado realiza instalaciones eficientes con mínima interrupción de actividades.</p>
         </div>
       </div>
     </div>
@@ -174,7 +183,7 @@
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div class="max-w-2xl">
         <h2 class="text-2xl sm:text-3xl font-bold">Proceso de Instalación</h2>
-        <p class="mt-2 text-slate-600">Nuestro método garantiza una instalación profesional y duradera</p>
+        <p class="mt-2 text-slate-600">Instalación profesional garantizada con los más altos estándares de seguridad</p>
       </div>
       <div class="mt-10 space-y-8">
         <!-- Paso 1 -->
@@ -182,13 +191,13 @@
           <div class="flex items-start">
             <div class="step-number">1</div>
             <div>
-              <h3 class="font-semibold text-lg">Evaluación y medición</h3>
-              <p class="mt-2 text-slate-600">Nuestros técnicos visitan el sitio para evaluar el terreno, tomar medidas precisas y recomendar la mejor solución según sus necesidades.</p>
+              <h3 class="font-semibold text-lg">Evaluación y diseño</h3>
+              <p class="mt-2 text-slate-600">Nuestros especialistas evalúan el terreno, identifican puntos vulnerables y diseñan el sistema óptimo de cerca con concertina para sus necesidades específicas.</p>
             </div>
           </div>
           <div class="rounded-2xl overflow-hidden soft-shadow">
             <!-- Espacio para imagen del paso 1 -->
-            <img src="https://images.unsplash.com/photo-1589923188937-cb64779f4abe?q=80&w=800&auto=format&fit=crop" alt="Evaluación y medición" class="w-full h-64 object-cover">
+            <img src="https://images.unsplash.com/photo-1589923188937-cb64779f4abe?q=80&w=800&auto=format&fit=crop" alt="Evaluación y diseño" class="w-full h-64 object-cover">
           </div>
         </div>
         
@@ -197,13 +206,13 @@
           <div class="flex items-start">
             <div class="step-number">2</div>
             <div>
-              <h3 class="font-semibold text-lg">Preparación del terreno</h3>
-              <p class="mt-2 text-slate-600">Preparamos el terreno, marcamos la línea de postes y realizamos los hoyos necesarios con la profundidad adecuada para garantizar estabilidad.</p>
+              <h3 class="font-semibold text-lg">Instalación de postes y estructura</h3>
+              <p class="mt-2 text-slate-600">Colocamos postes de acero galvanizado con hormigón de alta resistencia, asegurando una base sólida para la cerca. La distancia entre postes se calcula para óptima estabilidad.</p>
             </div>
           </div>
           <div class="rounded-2xl overflow-hidden soft-shadow">
             <!-- Espacio para imagen del paso 2 -->
-            <img src="https://images.unsplash.com/photo-1574359173084-bfcee66c2c2a?q=80&w=800&auto=format&fit=crop" alt="Preparación del terreno" class="w-full h-64 object-cover">
+            <img src="https://images.unsplash.com/photo-1574359173084-bfcee66c2c2a?q=80&w=800&auto=format&fit=crop" alt="Instalación de postes" class="w-full h-64 object-cover">
           </div>
         </div>
         
@@ -212,13 +221,13 @@
           <div class="flex items-start">
             <div class="step-number">3</div>
             <div>
-              <h3 class="font-semibold text-lg">Colocación de postes</h3>
-              <p class="mt-2 text-slate-600">Instalamos los postes de soporte con concreto de alta resistencia, asegurando su perfecta alineación y verticalidad.</p>
+              <h3 class="font-semibold text-lg">Colocación de malla base</h3>
+              <p class="mt-2 text-slate-600">Instalamos malla ciclónica de alta resistencia como base, asegurándola firmemente a la estructura con alambre de acero galvanizado y grapas especiales.</p>
             </div>
           </div>
           <div class="rounded-2xl overflow-hidden soft-shadow">
             <!-- Espacio para imagen del paso 3 -->
-            <img src="https://images.unsplash.com/photo-16114c0c4455-65c5c2103c3a?q=80&w=800&auto=format&fit=crop" alt="Colocación de postes" class="w-full h-64 object-cover">
+            <img src="https://images.unsplash.com/photo-1621841957884-1212fe2960e2?q=80&w=800&auto=format&fit=crop" alt="Colocación de malla base" class="w-full h-64 object-cover">
           </div>
         </div>
         
@@ -227,13 +236,13 @@
           <div class="flex items-start">
             <div class="step-number">4</div>
             <div>
-              <h3 class="font-semibold text-lg">Fijación de la malla</h3>
-              <p class="mt-2 text-slate-600">Desenrollamos y fijamos la malla ciclónica a los postes utilizando grapas y alambre de acero galvanizado para una sujeción firme y duradera.</p>
+              <h3 class="font-semibold text-lg">Instalación de concertina</h3>
+              <p class="mt-2 text-slate-600">Colocamos la concertina en la parte superior de la cerca utilizando equipo de seguridad especializado. Aseguramos la tensión correcta y la fijación apropiada para máxima efectividad.</p>
             </div>
           </div>
           <div class="rounded-2xl overflow-hidden soft-shadow">
             <!-- Espacio para imagen del paso 4 -->
-            <img src="https://images.unsplash.com/photo-1621841957884-1212fe2960e2?q=80&w=800&auto=format&fit=crop" alt="Fijación de la malla" class="w-full h-64 object-cover">
+            <img src="https://images.unsplash.com/photo-161014509966-501c4d0d506d?q=80&w=800&auto=format&fit=crop" alt="Instalación de concertina" class="w-full h-64 object-cover">
           </div>
         </div>
         
@@ -242,53 +251,53 @@
           <div class="flex items-start">
             <div class="step-number">5</div>
             <div>
-              <h3 class="font-semibold text-lg">Acabados y revisión final</h3>
-              <p class="mt-2 text-slate-600">Realizamos los acabados necesarios, instalamos accesorios adicionales si se requieren y hacemos una revisión exhaustiva de toda la instalación.</p>
+              <h3 class="font-semibold text-lg">Pruebas y revisión final</h3>
+              <p class="mt-2 text-slate-600">Realizamos pruebas de resistencia, verificamos todos los puntos de anclaje y hacemos una revisión exhaustiva para garantizar que la instalación cumple con los más altos estándares de seguridad.</p>
             </div>
           </div>
           <div class="rounded-2xl overflow-hidden soft-shadow">
             <!-- Espacio para imagen del paso 5 -->
-            <img src="https://images.unsplash.com/photo-1585275074577-2fe5db4d6b6c?q=80&w=800&auto=format&fit=crop" alt="Acabados y revisión final" class="w-full h-64 object-cover">
+            <img src="https://images.unsplash.com/photo-1585275074577-2fe5db4d6b6c?q=80&w=800&auto=format&fit=crop" alt="Pruebas y revisión final" class="w-full h-64 object-cover">
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Tipos de malla -->
+  <!-- Aplicaciones -->
   <section class="py-16 bg-white">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div class="max-w-2xl mx-auto text-center">
-        <h2 class="text-2xl sm:text-3xl font-bold">Tipos de Malla Ciclónica</h2>
-        <p class="mt-2 text-slate-600">Ofrecemos diferentes opciones según sus necesidades</p>
+        <h2 class="text-2xl sm:text-3xl font-bold">Aplicaciones de las Cercas con Concertina</h2>
+        <p class="mt-2 text-slate-600">Ideal para múltiples entornos que requieren alta seguridad</p>
       </div>
       <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6">
-        <!-- Tipo 1 -->
+        <!-- Aplicación 1 -->
         <div class="bg-[var(--bg)] rounded-2xl p-6 border border-slate-100 soft-shadow">
           <div class="h-40 rounded-xl overflow-hidden mb-4">
-            <!-- Espacio para imagen tipo 1 -->
-            <img src="https://images.unsplash.com/photo-1600803907087-f56d462fd26b?q=80&w=800&auto=format&fit=crop" alt="Malla ciclónica galvanizada" class="w-full h-full object-cover">
+            <!-- Espacio para imagen aplicación 1 -->
+            <img src="https://images.unsplash.com/photo-1589656966895-2f33e7653819?q=80&w=800&auto=format&fit=crop" alt="Áreas industriales" class="w-full h-full object-cover">
           </div>
-          <h3 class="font-semibold text-lg">Malla Galvanizada</h3>
-          <p class="mt-2 text-slate-600">Tratamiento contra óxido ideal para zonas con humedad. Disponible en diferentes calibres y alturas.</p>
+          <h3 class="font-semibold text-lg">Áreas Industriales</h3>
+          <p class="mt-2 text-slate-600">Protección perimetral para fábricas, bodegas, parques industriales y zonas de almacenamiento.</p>
         </div>
-        <!-- Tipo 2 -->
+        <!-- Aplicación 2 -->
         <div class="bg-[var(--bg)] rounded-2xl p-6 border border-slate-100 soft-shadow">
           <div class="h-40 rounded-xl overflow-hidden mb-4">
-            <!-- Espacio para imagen tipo 2 -->
-            <img src="https://images.unsplash.com/photo-1616594039964-44eeaf39c2ab?q=80&w=800&auto=format&fit=crop" alt="Malla ciclónica con PVC" class="w-full h-full object-cover">
+            <!-- Espacio para imagen aplicación 2 -->
+            <img src="https://images.unsplash.com/photo-1616594039964-44eeaf39c2ab?q=80&w=800&auto=format&fit=crop" alt="Instalaciones críticas" class="w-full h-full object-cover">
           </div>
-          <h3 class="font-semibold text-lg">Malla con Recubrimiento PVC</h3>
-          <p class="mt-2 text-slate-600">Mayor protección contra la corrosión y aspecto estético. Disponible en varios colores.</p>
+          <h3 class="font-semibold text-lg">Instalaciones Críticas</h3>
+          <p class="mt-2 text-slate-600">Subestaciones eléctricas, plantas de tratamiento, telecomunicaciones y infraestructura vital.</p>
         </div>
-        <!-- Tipo 3 -->
+        <!-- Aplicación 3 -->
         <div class="bg-[var(--bg)] rounded-2xl p-6 border border-slate-100 soft-shadow">
           <div class="h-40 rounded-xl overflow-hidden mb-4">
-            <!-- Espacio para imagen tipo 3 -->
-            <img src="https://images.unsplash.com/photo-1554592896-8b06473f991c?q=80&w=800&auto=format&fit=crop" alt="Malla ciclónica reforzada" class="w-full h-full object-cover">
+            <!-- Espacio para imagen aplicación 3 -->
+            <img src="https://images.unsplash.com/photo-1600803907087-f56d462fd26b?q=80&w=800&auto=format&fit=crop" alt="Residencias de alto riesgo" class="w-full h-full object-cover">
           </div>
-          <h3 class="font-semibold text-lg">Malla Reforzada</h3>
-          <p class="mt-2 text-slate-600">Mayor grosor y resistencia, ideal para áreas que requieren alta seguridad o están expuestas a fuertes vientos.</p>
+          <h3 class="font-semibold text-lg">Residencias de Alto Riesgo</h3>
+          <p class="mt-2 text-slate-600">Viviendas en zonas vulnerables, residencias de lujo y propiedades que requieren máxima seguridad.</p>
         </div>
       </div>
     </div>
@@ -297,11 +306,11 @@
   <!-- CTA Banda -->
   <section id="cta" class="py-14">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-      <div class="rounded-3xl bg-gradient-to-r from-emerald-500 to-blue-500 p-1 soft-shadow">
+      <div class="rounded-3xl bg-gradient-to-r from-red-500 to-blue-500 p-1 soft-shadow">
         <div class="rounded-3xl bg-white p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
-            <h3 class="text-2xl font-extrabold">¿Necesitas instalar malla ciclónica?</h3>
-            <p class="mt-2 text-slate-600">Cotizamos sin costo. Envíanos medidas, fotos o dirección para una evaluación precisa.</p>
+            <h3 class="text-2xl font-extrabold">¿Necesitas máxima seguridad con cercas con concertina?</h3>
+            <p class="mt-2 text-slate-600">Cotizamos sin costo. Especifica tus requerimientos de seguridad para una evaluación precisa.</p>
           </div>
           <a href="#contacto" class="inline-flex items-center rounded-xl bg-[var(--brand)] px-6 py-3 font-semibold text-white soft-shadow">Solicitar cotización</a>
         </div>
@@ -331,9 +340,9 @@
         <div>
           <h4 class="font-semibold">Enlaces</h4>
           <ul class="mt-3 space-y-2 text-slate-300">
-            <li><a href="index.html" class="hover:underline">Inicio</a></li>
-            <li><a href="servicios.html" class="hover:underline">Servicios</a></li>
-            <li><a href="proyectos.html" class="hover:underline">Proyectos</a></li>
+            <li><a href="../index.html" class="hover:underline">Inicio</a></li>
+            <li><a href="../servicios.html" class="hover:underline">Servicios</a></li>
+            <li><a href="../proyectos.html" class="hover:underline">Proyectos</a></li>
             <li><a href="#cta" class="hover:underline">Cotizar</a></li>
           </ul>
         </div>
@@ -346,7 +355,7 @@
   </footer>
 
   <!-- Botón flotante WhatsApp -->
-  <a href="https://wa.me/525500000000?text=Hola,%20quiero%20cotizar%20malla%20ciclonica" class="fixed bottom-5 right-5 inline-flex items-center justify-center w-14 h-14 rounded-full bg-emerald-500 text-white soft-shadow" aria-label="WhatsApp">
+  <a href="https://wa.me/525500000000?text=Hola,%20quiero%20cotizar%20cerca%20con%20concertina" class="fixed bottom-5 right-5 inline-flex items-center justify-center w-14 h-14 rounded-full bg-emerald-500 text-white soft-shadow" aria-label="WhatsApp">
     <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163A10.9 10.9 0 011.2 11.78C1.2 5.29 6.49 0 12.98 0a11.77 11.77 0 018.4 3.48 11.86 11.86 0 013.48 8.46c0 6.49-5.29 11.78-11.78 11.78a12 12 0 01-5.6-1.42L.057 24zM6.6 19.4a9.5 9.5 0 004.87 1.33c5.25 0 9.52-4.27 9.52-9.52A9.46 9.46 0 0012.96 1.7 9.62 9.62 0 003.43 11.2c0 1.68.45 3.29 1.31 4.7l-.86 3.15 2.72-.84z"/><path d="M17.5 14.2c-.1-.1-.6-.3-1.1-.5s-.7-.1-1 .2-.3.5-.5.8-.4.3-.7.2c-.4-.1-1.3-.5-2.2-1.4s-1.4-1.8-1.5-2.2.1-.5.2-.7.1-.3.2-.5c.1-.2 0-.4-.1-.5-.1-.1-1-.9-1.1-1s-.3-.1-.5 0-.5.2-.8.5c-.3.3-.6.6-.6 1s.1 1 .3 1.3c.3.5.7 1.1 1.3 1.7.6.6 1.2 1 1.7 1.3.5.3 1 .5 1.3.6.5.2 1 .2 1.3.1.4-.1 1.2-.5 1.4-1 .2-.5.2-.9.1-1z"/></svg>
   </a>
 

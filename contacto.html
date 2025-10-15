@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="src/css/output.css">
   <style>
     :root{
       --brand:#10B981; /* verde confianza */
@@ -37,12 +37,13 @@
           <span class="font-extrabold tracking-tight text-lg">Cercas & Alambrados <span class="text-[var(--brand)]">VERA</span></span>
         </a>
 
-        <nav class="hidden md:flex items-center gap-8 text-sm">
-          <a href="protitipo_web.html" class="hover:text-[var(--brand)] transition">Inicio</a>
+        <nav class="hidden md:flex items-center gap-8 text-sm" aria-label="Navegación principal">
+          <a href="index.html" class="hover:text-[var(--brand)] transition">Inicio</a>
           <a href="nosotros.html" class="hover:text-[var(--brand)] transition">Nosotros</a>
-          <a href="proyectos.html" class="hover:text-[var(--brand)] transition">Proyectos</a>
           <a href="servicios.html" class="hover:text-[var(--brand)] transition">Servicios</a>
-          <a href="#formulario" class="inline-flex items-center rounded-xl bg-[var(--brand)] px-4 py-2 font-semibold text-white hover:opacity-90 transition soft-shadow">Cotiza ahora</a>
+          <a href="proyectos.html" class="hover:text-[var(--brand)] transition">Proyectos</a>
+          <a href="contacto.html" class="hover:text-[var(--brand)] transition font-semibold text-[var(--brand)]">Contacto</a>
+          <a href="#cta" class="inline-flex items-center rounded-xl bg-[var(--brand)] px-4 py-2 font-semibold text-white hover:opacity-90 transition soft-shadow">Cotiza ahora</a>
         </nav>
 
         <button id="menuBtn" class="md:hidden inline-flex items-center justify-center rounded-xl border px-3 py-2 border-slate-200">

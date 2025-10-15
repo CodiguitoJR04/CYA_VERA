@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyectos Residenciales | Impermax</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Lightbox simple */
+    .lightbox {
+      display: none;
+      position: fixed;
+      z-index: 50;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.8);
+      justify-content: center;
+      align-items: center;
+    }
+    .lightbox img {
+      max-width: 90%;
+      max-height: 90%;
+      border-radius: 1rem;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <!-- Header / Nav -->
+  <header class="sticky top-0 z-40 bg-white/95 shadow-sm">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+      <a href="/" class="text-2xl font-bold text-[#20304C]">Impermax</a>
+      <nav class="hidden md:flex gap-6 text-[#3A5074]">
+        <a href="/" class="hover:text-[#9eb246]">Inicio</a>
+        <a href="/proyectos.html" class="hover:text-[#9eb246]">Proyectos</a>
+        <a href="/contacto.html" class="hover:text-[#9eb246]">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative bg-[#20304C] text-white py-16">
+    <div class="max-w-4xl mx-auto text-center">
+      <h1 class="text-4xl font-bold mb-4">Proyectos Residenciales</h1>
+      <p class="text-lg text-gray-200">Galería de nuestras instalaciones en casas y fraccionamientos.</p>
+      <div class="mt-4 text-sm text-gray-300">
+        <a href="/" class="hover:underline">Inicio</a> / 
+        <a href="/proyectos.html" class="hover:underline">Proyectos</a> / Residencial
+      </div>
+    </div>
+  </section>
+
+  <!-- Galería -->
+  <section class="max-w-7xl mx-auto px-6 py-16">
+    <h2 class="text-2xl font-bold text-[#31644c] mb-8">Galería de trabajos</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <img src="/assets/img/residencial/imagen-1.jpg" alt="Proyecto 1" class="rounded-xl shadow-md cursor-pointer hover:scale-105 transition" onclick="openLightbox(this.src)">
+      <img src="/assets/img/residencial/imagen-2.jpg" alt="Proyecto 2" class="rounded-xl shadow-md cursor-pointer hover:scale-105 transition" onclick="openLightbox(this.src)">
+      <img src="/assets/img/residencial/imagen-3.jpg" alt="Proyecto 3" class="rounded-xl shadow-md cursor-pointer hover:scale-105 transition" onclick="openLightbox(this.src)">
+      <img src="/assets/img/residencial/imagen-4.jpg" alt="Proyecto 4" class="rounded-xl shadow-md cursor-pointer hover:scale-105 transition" onclick="openLightbox(this.src)">
+      <img src="/assets/img/residencial/imagen-5.jpg" alt="Proyecto 5" class="rounded-xl shadow-md cursor-pointer hover:scale-105 transition" onclick="openLightbox(this.src)">
+      <img src="/assets/img/residencial/imagen-6.jpg" alt="Proyecto 6" class="rounded-xl shadow-md cursor-pointer hover:scale-105 transition" onclick="openLightbox(this.src)">
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-[#3A5074] text-white py-16 text-center">
+    <h2 class="text-2xl font-bold mb-4">¿Quieres una cerca residencial como estas?</h2>
+    <p class="mb-6">Solicita una cotización personalizada y déjanos ayudarte a proteger tu hogar.</p>
+    <a href="/contacto.html" class="bg-[#9eb246] px-6 py-3 rounded-xl font-semibold hover:bg-[#7d9135] transition">Solicitar Cotización</a>
+  </section>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img" src="" alt="Imagen ampliada">
+  </div>
+
+  <script>
+    function openLightbox(src) {
+      document.getElementById("lightbox").style.display = "flex";
+      document.getElementById("lightbox-img").src = src;
+    }
+    function closeLightbox() {
+      document.getElementById("lightbox").style.display = "none";
+    }
+  </script>
+
+</body>
+</html>

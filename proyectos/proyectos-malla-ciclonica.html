@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="es" itemscope itemtype="https://schema.org/Organization">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Proyectos de Malla Ciclónica | Cercas & Alambrados VERA</title>
+  <meta name="description" content="Especialistas en instalación de malla ciclónica. Galería de proyectos realizados con ventajas, beneficios y soluciones de seguridad perimetral con malla ciclónica." />
+  <meta name="keywords" content="malla ciclónica, malla ciclonica, proyectos malla ciclónica, seguridad perimetral, instalación malla ciclónica, cercas malla ciclónica, ventajas malla ciclónica" />
+  <link rel="canonical" href="https://www.tudominio.com/proyectos-malla-ciclonica.html" />
+  <link rel="stylesheet" href="/src/css/output.css">
+  
+  <!-- Schema.org markup -->
+  <meta itemprop="name" content="Cercas & Alambrados VERA">
+  <meta itemprop="description" content="Especialistas en instalación de malla ciclónica para seguridad residencial e industrial.">
+  <meta itemprop="image" content="https://images.unsplash.com/photo-1616594039964-44eeaf39c2ab?q=80&w=1600&auto=format&fit=crop">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Proyectos de Malla Ciclónica | Cercas & Alambrados VERA" />
+  <meta property="og:description" content="Galería especializada en proyectos de malla ciclónica para seguridad residencial e industrial." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1616594039964-44eeaf39c2ab?q=80&w=1600&auto=format&fit=crop" />
+  <meta property="og:url" content="https://www.tudominio.com/proyectos-malla-ciclonica.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Cercas & Alambrados VERA" />
+  <meta property="og:locale" content="es_MX" />
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Proyectos de Malla Ciclónica | Cercas & Alambrados VERA">
+  <meta name="twitter:description" content="Galería especializada en proyectos de malla ciclónica para seguridad residencial e industrial.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1616594039964-44eeaf39c2ab?q=80&w=1600&auto=format&fit=crop">
+  
+  <!-- Preconnect and Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <style>
+    :root{
+      --brand:#10B981; /* verde confianza */
+      --accent:#3B82F6; /* azul acero */
+      --ink:#111827;    /* gris oscuro texto */
+      --bg:#F9FAFB;     /* gris muy claro fondo */
+    }
+    html{scroll-behavior:smooth}
+    body{font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica Neue, Arial, "Apple Color Emoji", "Segoe UI Emoji"}
+    .soft-shadow{box-shadow:0 6px 24px rgba(2,6,23,0.08), 0 2px 8px rgba(2,6,23,0.06)}
+    
+    /* Galería mosaico */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: repeat(6, 200px);
+      gap: 16px;
+      margin-top: 2rem;
+    }
+    
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    
+    .gallery-item:hover {
+      transform: translateY(-5px);
+    }
+    
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+    
+    .gallery-item:hover img {
+      transform: scale(1.05);
+    }
+    
+    /* Posicionamiento de elementos en el mosaico */
+    .gallery-item:nth-child(1) {
+      grid-column: 1 / 5;
+      grid-row: 1 / 3;
+    }
+    
+    .gallery-item:nth-child(2) {
+      grid-column: 5 / 9;
+      grid-row: 1 / 3;
+    }
+    
+    .gallery-item:nth-child(3) {
+      grid-column: 9 / 13;
+      grid-row: 1 / 4;
+    }
+    
+    .gallery-item:nth-child(4) {
+      grid-column: 1 / 5;
+      grid-row: 3 / 5;
+    }
+    
+    .gallery-item:nth-child(5) {
+      grid-column: 5 / 9;
+      grid-row: 3 / 5;
+    }
+    
+    .gallery-item:nth-child(6) {
+      grid-column: 1 / 7;
+      grid-row: 5 / 7;
+    }
+    
+    .gallery-item:nth-child(7) {
+      grid-column: 7 / 13;
+      grid-row: 4 / 7;
+    }
+    
+    .gallery-item:nth-child(8) {
+      grid-column: 9 / 13;
+      grid-row: 5 / 7;
+    }
+    
+    /* Lightbox */
+    .lightbox {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.9);
+      z-index: 1000;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .lightbox.active {
+      display: flex;
+    }
+    
+    .lightbox-content {
+      max-width: 90%;
+      max-height: 90%;
+      position: relative;
+    }
+    
+    .lightbox-content img {
+      width: 100%;
+      height: auto;
+      max-height: 80vh;
+      object-fit: contain;
+    }
+    
+    .lightbox-close {
+      position: absolute;
+      top: -40px;
+      right: 0;
+      color: white;
+      font-size: 30px;
+      cursor: pointer;
+      background: none;
+      border: none;
+    }
+    
+    .lightbox-nav {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(255, 255, 255, 0.2);
+      color: white;
+      border: none;
+      font-size: 24px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: background 0.3s;
+    }
+    
+    .lightbox-nav:hover {
+      background: rgba(255, 255, 255, 0.4);
+    }
+    
+    .lightbox-prev {
+      left: 20px;
+    }
+    
+    .lightbox-next {
+      right: 20px;
+    }
+    
+    /* Responsive */
+    @media (max-width: 768px) {
+      .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(8, 200px);
+      }
+      
+      .gallery-item {
+        grid-column: auto !important;
+        grid-row: auto !important;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .gallery-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8, 250px);
+      }
+    }
+    
+    .project-button {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background-color: var(--brand);
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      margin-top: 15px;
+    }
+    .project-button:hover {
+      background-color: #0da271;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+    }
+    
+    /* Schema.org hidden markup */
+    .schema-hidden {
+      display: none;
+    }
+    
+    /* Breadcrumb */
+    .breadcrumb {
+      background-color: #f8fafc;
+      padding: 1rem 0;
+      border-bottom: 1px solid #e2e8f0;
+    }
+    
+    .breadcrumb ol {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      font-size: 0.875rem;
+    }
+    
+    .breadcrumb li:not(:last-child)::after {
+      content: ">";
+      margin-left: 0.5rem;
+      color: #64748b;
+    }
+    
+    .breadcrumb a {
+      color: var(--brand);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    
+    .breadcrumb a:hover {
+      color: #0da271;
+      text-decoration: underline;
+    }
+    
+    .breadcrumb span {
+      color: #64748b;
+    }
+  </style>
+</head>
+<body class="bg-[var(--bg)] text-[var(--ink)]">
+  <!-- Schema.org structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Cercas & Alambrados VERA",
+    "url": "https://www.tudominio.com",
+    "logo": "https://www.tudominio.com/logo.png",
+    "description": "Especialistas en instalación de cercas residenciales e industriales, mallas ciclónicas y concertina.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Ciudad de México",
+      "addressCountry": "MX"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+52-55-0000-0000",
+      "contactType": "customer service",
+      "areaServed": "MX",
+      "availableLanguage": "es"
+    },
+    "sameAs": []
+  }
+  </script>
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Inicio",
+      "item": "https://www.tudominio.com/index.html"
+    },{
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Proyectos",
+      "item": "https://www.tudominio.com/proyectos.html"
+    },{
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Malla Ciclónica",
+      "item": "https://www.tudominio.com/proyectos-malla-ciclonica.html"
+    }]
+  }
+  </script>
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-slate-100">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex h-16 items-center justify-between">
+        <a href="index.html" class="flex items-center gap-3" aria-label="Cercas & Alambrados VERA - Inicio">
+          <!-- Logo minimal: poste + alambre -->
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-[var(--brand)]">
+            <rect x="3" y="3" width="3" height="18" rx="1" fill="currentColor"/>
+            <path d="M6 7h14M6 12h14M6 17h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          <span class="font-extrabold tracking-tight text-lg">Cercas & Alambrados <span class="text-[var(--brand)]">VERA</span></span>
+        </a>
+
+        <nav class="hidden md:flex items-center gap-8 text-sm" aria-label="Navegación principal">
+          <a href="index.html" class="hover:text-[var(--brand)] transition">Inicio</a>
+          <a href="nosotros.html" class="hover:text-[var(--brand)] transition">Nosotros</a>
+          <a href="servicios.html" class="hover:text-[var(--brand)] transition">Servicios</a>
+          <a href="proyectos.html" class="hover:text-[var(--brand)] transition">Proyectos</a>
+          <a href="proyectos-malla-ciclonica.html" class="hover:text-[var(--brand)] transition font-semibold text-[var(--brand)]">Malla Ciclónica</a>
+          <a href="contacto.html" class="hover:text-[var(--brand)] transition">Contacto</a>
+          <a href="#cta" class="inline-flex items-center rounded-xl bg-[var(--brand)] px-4 py-2 font-semibold text-white hover:opacity-90 transition soft-shadow">Cotiza ahora</a>
+        </nav>
+
+        <button id="menuBtn" class="md:hidden inline-flex items-center justify-center rounded-xl border px-3 py-2 border-slate-200" aria-expanded="false" aria-controls="mobileMenu">
+          <span class="sr-only">Abrir menú</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
+        </button>
+      </div>
+    </div>
+    <!-- Mobile menu -->
+    <div id="mobileMenu" class="md:hidden hidden border-t border-slate-100 bg-white">
+      <div class="mx-auto max-w-7xl px-4 py-3 flex flex-col gap-2 text-sm">
+        <a href="index.html" class="hover:text-[var(--brand)] transition">Inicio</a>
+        <a href="nosotros.html" class="hover:text-[var(--brand)] transition">Nosotros</a>
+        <a href="servicios.html" class="hover:text-[var(--brand)] transition">Servicios</a>
+        <a href="proyectos.html" class="hover:text-[var(--brand)] transition">Proyectos</a>
+        <a href="proyectos-malla-ciclonica.html" class="hover:text-[var(--brand)] transition font-semibold text-[var(--brand)]">Malla Ciclónica</a>
+        <a href="contacto.html" class="hover:text-[var(--brand)] transition">Contacto</a>
+        <a href="#cta" class="inline-flex items-center justify-center rounded-xl bg-[var(--brand)] px-4 py-2 font-semibold text-white mt-1">Cotiza ahora</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Breadcrumb -->
+  <div class="breadcrumb">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <ol>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="proyectos.html">Proyectos</a></li>
+        <li><span>Malla Ciclónica</span></li>
+      </ol>
+    </div>
+  </div>
+
+  <!-- Hero Proyectos Malla Ciclónica -->
+  <section class="relative overflow-hidden" aria-labelledby="hero-title">
+    <div class="absolute inset-0 -z-10">
+      <!-- Imagen de fondo específica para malla ciclónica -->
+      <div class="h-full w-full bg-cover bg-center" style="background-image:url('https://images.unsplash.com/photo-1616594039964-44eeaf39c2ab?q=80&w=1600&auto=format&fit=crop'); filter:contrast(0.95)" role="img" aria-label="Instalación profesional de malla ciclónica"></div>
+      <div class="absolute inset-0 bg-black/40"></div>
+    </div>
+
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24 sm:py-28 lg:py-32 text-white">
+      <div class="max-w-2xl">
+        <span class="inline-block rounded-full bg-white/10 px-3 py-1 text-xs font-medium ring-1 ring-white/30 mb-4">Solución versátil</span>
+        <h1 id="hero-title" class="text-4xl sm:text-5xl font-extrabold leading-tight">Proyectos de Malla Ciclónica</h1>
+        <p class="mt-4 text-white/90 max-w-xl">Sistemas de cerramiento perimetral con malla ciclónica para seguridad, delimitación y protección en residencias, industrias y espacios públicos. Equilibrio perfecto entre funcionalidad y economía.</p>
+        <div class="mt-6">
+          <a href="proyectos.html" class="inline-flex items-center gap-2 text-white/90 hover:text-white transition">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+            </svg>
+            Volver a todos los proyectos
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Texto SEO y Ventajas -->
+  <section class="py-16 bg-white" aria-labelledby="seo-title">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="max-w-4xl">
+        <h2 id="seo-title" class="text-2xl sm:text-3xl font-bold">Malla Ciclónica: Cerramiento Versátil y Económico</h2>
+        <div class="mt-6 text-slate-700 space-y-4">
+          <p>La <strong>malla ciclónica</strong> es una de las soluciones más populares y versátiles para <strong>cerramiento perimetral</strong> en todo tipo de propiedades. En <strong>Cercas & Alambrados VERA</strong>, implementamos sistemas de malla ciclónica que combinan funcionalidad, durabilidad y excelente relación costo-beneficio.</p>
+          
+          <p>Nuestros <strong>proyectos de malla ciclónica</strong> destacan por su adaptabilidad a diferentes terrenos y necesidades. Trabajamos con mallas de alta resistencia galvanizadas que garantizan protección duradera contra la corrosión y condiciones climáticas adversas, asegurando una larga vida útil.</p>
+          
+          <h3 class="text-xl font-semibold mt-8 mb-4">Ventajas de la Malla Ciclónica</h3>
+          <ul class="list-disc pl-5 space-y-2">
+            <li><strong>Visibilidad y transparencia:</strong> Permite supervisión visual del área protegida sin obstrucciones.</li>
+            <li><strong>Excelente ventilación:</strong> No interfiere con la circulación del aire, ideal para áreas que requieren ventilación natural.</li>
+            <li><strong>Instalación rápida:</strong> Nuestros equipos especializados completan las instalaciones eficientemente en diversos terrenos.</li>
+            <li><strong>Mantenimiento mínimo:</strong> Requiere poco mantenimiento gracias a su tratamiento anticorrosivo.</li>
+            <li><strong>Versatilidad de aplicación:</strong> Ideal para residencias, escuelas, parques, industrias, terrenos deportivos y más.</li>
+            <li><strong>Relación costo-beneficio:</strong> Solución económica que ofrece durabilidad y funcionalidad excepcionales.</li>
+            <li><strong>Personalización:</strong> Se adapta fácilmente a terrenos irregulares y diferentes alturas requeridas.</li>
+          </ul>
+          
+          <p class="mt-6">En nuestra galería de proyectos, podrá observar diversas aplicaciones de <strong>malla ciclónica</strong>, desde <strong>cerramientos residenciales básicos</strong> hasta <strong>protección perimetral para complejos industriales</strong>, demostrando nuestra capacidad de adaptar la solución a cada necesidad específica.</p>
+          
+          <div class="mt-8 pt-6 border-t border-slate-200">
+            <a href="proyectos.html" class="inline-flex items-center gap-2 text-[var(--brand)] hover:text-[#0da271] transition font-medium">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+              </svg>
+              Ver todos los tipos de proyectos
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galería Mosaico -->
+  <section class="py-16 bg-slate-50" aria-labelledby="gallery-title">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <h2 id="gallery-title" class="text-2xl sm:text-3xl font-bold text-center">Galería de Proyectos de Malla Ciclónica</h2>
+      <p class="mt-2 text-slate-600 text-center">Haz clic en cualquier imagen para verla en tamaño completo</p>
+      
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1616594039964-44eeaf39c2ab?q=80&w=800&auto=format&fit=crop" alt="Instalación de malla ciclónica residencial con postes de acero" loading="lazy">
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1616594039964-44eeaf39c2ab?q=80&w=800&auto=format&fit=crop" alt="Malla ciclónica para protección perimetral industrial" loading="lazy">
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1616594039964-44eeaf39c2ab?q=80&w=800&auto=format&fit=crop" alt="Detalle de instalación de malla ciclónica con rieles" loading="lazy">
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1616594039964-44eeaf39c2ab?q=80&w=800&auto=format&fit=crop" alt="Proyecto de malla ciclónica para terreno escolar" loading="lazy">
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1616594039964-44eeaf39c2ab?q=80&w=800&auto=format&fit=crop" alt="Malla ciclónica con portón de acceso automatizado" loading="lazy">
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1616594039964-44eeaf39c2ab?q=80&w=800&auto=format&fit=crop" alt="Cerramiento perimetral con malla ciclónica para parque público" loading="lazy">
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1616594039964-44eeaf39c2ab?q=80&w=800&auto=format&fit=crop" alt="Instalación profesional de malla ciclónica con tensores" loading="lazy">
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1616594039964-44eeaf39c2ab?q=80&w=800&auto=format&fit=crop" alt="Proyecto completo de malla ciclónica para condominio residencial" loading="lazy">
+        </div>
+      </div>
+      
+      <div class="mt-10 text-center">
+        <a href="proyectos.html" class="project-button">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+          </svg>
+          Ver todos los proyectos
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose">&times;</button>
+    <button class="lightbox-nav lightbox-prev" id="lightboxPrev">&#10094;</button>
+    <button class="lightbox-nav lightbox-next" id="lightboxNext">&#10095;</button>
+    <div class="lightbox-content">
+      <img id="lightboxImage" src="" alt="">
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <section id="cta" class="py-14 bg-white" aria-labelledby="cta-title">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="rounded-3xl bg-gradient-to-r from-emerald-500 to-blue-500 p-1 soft-shadow">
+        <div class="rounded-3xl bg-white p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-6">
+          <div>
+            <h3 id="cta-title" class="text-2xl font-extrabold">¿Te interesa una malla ciclónica?</h3>
+            <p class="mt-2 text-slate-600">Contáctanos para cotizar tu proyecto de cerramiento perimetral con malla ciclónica. Presupuesto sin compromiso.</p>
+          </div>
+          <a href="contacto.html" class="inline-flex items-center rounded-xl bg-[var(--brand)] px-6 py-3 font-semibold text-white soft-shadow hover:opacity-90 transition">Solicitar cotización</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-slate-900 text-slate-100">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-14">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10">
+        <div class="md:col-span-2">
+          <div class="flex items-center gap-3">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-emerald-400"><rect x="3" y="3" width="3" height="18" rx="1" fill="currentColor"/><path d="M6 7h14M6 12h14M6 17h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <span class="font-extrabold tracking-tight text-lg">Cercas & Alambrados <span class="text-emerald-400">VERA</span></span>
+          </div>
+          <p class="mt-4 text-slate-400 max-w-md">Especialistas en instalación de malla ciclónica para seguridad residencial, industrial y comercial. Servicio en toda el área metropolitana.</p>
+        </div>
+        <div>
+          <h4 class="font-semibold">Contacto</h4>
+          <ul class="mt-3 space-y-2 text-slate-300">
+            <li>Tel: (55) 0000 0000</li>
+            <li>WhatsApp: +52 55 0000 0000</li>
+            <li>correo@fbakr-cercas.com</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold">Enlaces</h4>
+          <ul class="mt-3 space-y-2 text-slate-300">
+            <li><a href="index.html" class="hover:underline">Inicio</a></li>
+            <li><a href="nosotros.html" class="hover:underline">Nosotros</a></li>
+            <li><a href="servicios.html" class="hover:underline">Servicios</a></li>
+            <li><a href="proyectos.html" class="hover:underline">Proyectos</a></li>
+            <li><a href="proyectos-malla-ciclonica.html" class="hover:underline">Malla Ciclónica</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-10 border-t border-white/10 pt-6 text-sm text-slate-400 flex flex-col sm:flex-row items-center justify-between gap-3">
+        <p>© 2025 Cercas & Alambrados VERA. Todos los derechos reservados.</p>
+        <p>Hecho con ❤ para tu seguridad perimetral.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botón flotante WhatsApp -->
+  <a href="https://wa.me/525500000000?text=Hola,%20quiero%20cotizar%20una%20malla%20ciclónica" class="fixed bottom-5 right-5 inline-flex items-center justify-center w-14 h-14 rounded-full bg-emerald-500 text-white soft-shadow hover:bg-emerald-600 transition" aria-label="Contactar por WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163A10.9 10.9 0 011.2 11.78C1.2 5.29 6.49 0 12.98 0a11.77 11.77 0 018.4 3.48 11.86 11.86 0 013.48 8.46c0 6.49-5.29 11.78-11.78 11.78a12 12 0 01-5.6-1.42L.057 24zM6.6 19.4a9.5 9.5 0 004.87 1.33c5.25 0 9.52-4.27 9.52-9.52A9.46 9.46 0 0012.96 1.7 9.62 9.62 0 003.43 11.2c0 1.68.45 3.29 1.31 4.7l-.86 3.15 2.72-.84z"/><path d="M17.5 14.2c-.1-.1-.6-.3-1.1-.5s-.7-.1-1 .2-.3.5-.5.8-.4.3-.7.2c-.4-.1-1.3-.5-2.2-1.4s-1.4-1.8-1.5-2.2.1-.5.2-.7.1-.3.2-.5c.1-.2 0-.4-.1-.5-.1-.1-1-.9-1.1-1s-.3-.1-.5 0-.5.2-.8.5c-.3.3-.6.6-.6 1s.1 1 .3 1.3c.3.5.7 1.1 1.3 1.7.6.6 1.2 1 1.7 1.3.5.3 1 .5 1.3.6.5.2 1 .2 1.3.1.4-.1 1.2-.5 1.4-1 .2-.5.2-.9.1-1z"/></svg>
+  </a>
+
+  <script>
+    // Menú móvil
+    const btn = document.getElementById('menuBtn');
+    const menu = document.getElementById('mobileMenu');
+    btn?.addEventListener('click',()=>{
+      menu.classList.toggle('hidden');
+      const expanded = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', !expanded);
+    });
+
+    // Lightbox functionality
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImage = document.getElementById('lightboxImage');
+    const lightboxClose = document.getElementById('lightboxClose');
+    const lightboxPrev = document.getElementById('lightboxPrev');
+    const lightboxNext = document.getElementById('lightboxNext');
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    
+    let currentImageIndex = 0;
+    const images = Array.from(galleryItems).map(item => ({
+      src: item.querySelector('img').src,
+      alt: item.querySelector('img').alt
+    }));
+    
+    // Open lightbox
+    galleryItems.forEach((item, index) => {
+      item.addEventListener('click', () => {
+        currentImageIndex = index;
+        updateLightboxImage();
+        lightbox.classList.add('active');
+        document.body.style.overflow = 'hidden'; // Prevent scrolling
+      });
+    });
+    
+    // Close lightbox
+    lightboxClose.addEventListener('click', () => {
+      lightbox.classList.remove('active');
+      document.body.style.overflow = 'auto'; // Re-enable scrolling
+    });
+    
+    // Close lightbox when clicking outside the image
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) {
+        lightbox.classList.remove('active');
+        document.body.style.overflow = 'auto';
+      }
+    });
+    
+    // Navigate images
+    lightboxPrev.addEventListener('click', (e) => {
+      e.stopPropagation();
+      currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+      updateLightboxImage();
+    });
+    
+    lightboxNext.addEventListener('click', (e) => {
+      e.stopPropagation();
+      currentImageIndex = (currentImageIndex + 1) % images.length;
+      updateLightboxImage();
+    });
+    
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+      if (!lightbox.classList.contains('active')) return;
+      
+      if (e.key === 'Escape') {
+        lightbox.classList.remove('active');
+        document.body.style.overflow = 'auto';
+      } else if (e.key === 'ArrowLeft') {
+        currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+        updateLightboxImage();
+      } else if (e.key === 'ArrowRight') {
+        currentImageIndex = (currentImageIndex + 1) % images.length;
+        updateLightboxImage();
+      }
+    });
+    
+    function updateLightboxImage() {
+      lightboxImage.src = images[currentImageIndex].src;
+      lightboxImage.alt = images[currentImageIndex].alt;
+    }
+  </script>
+</body>
+</html>
