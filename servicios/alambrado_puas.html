@@ -18,7 +18,7 @@
     }
     html{scroll-behavior:smooth}
     body{font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica Neue, Arial, "Apple Color Emoji", "Segoe UI Emoji"}
-    .soft-shadow{box-shadow:0 6px 24px rgba(2,6,23,0.08), 0 2px 8px rgba(2,6,23,0.06)}
+    .soft-shadow{box-shadow:0 6px 24px rgba(2,6,23,0.08), 0 2px8px rgba(2,6,23,0.06)}
     .service-card {transition: transform 0.3s ease, box-shadow 0.3s ease;}
     .service-card:hover {transform: translateY(-5px);}
   </style>
@@ -63,12 +63,12 @@
     </div>
   </header>
 
-  <!-- Hero Alambre de Púas -->
+  <!-- Hero Alambre de Púas con nuevo estilo -->
   <section class="relative overflow-hidden">
     <div class="absolute inset-0 -z-10">
       <!-- Imagen de fondo de stock sugerida para alambre de púas -->
       <div class="h-full w-full bg-cover bg-center" style="background-image:url('https://images.unsplash.com/photo-1572814891108-0cb89270e1e7?q=80&w=1600&auto=format&fit=crop'); filter:contrast(0.95)"></div>
-      <div class="absolute inset-0 bg-gradient-to-r from-gray-900/70 to-slate-900/60"></div>
+      <div class="absolute inset-0 bg-black/40"></div>
     </div>
 
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24 sm:py-28 lg:py-32 text-white">
@@ -76,6 +76,10 @@
         <span class="inline-block rounded-full bg-white/10 px-3 py-1 text-xs font-medium ring-1 ring-white/30 mb-4">Solución económica y efectiva</span>
         <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight">Alambre de Púas Profesional</h1>
         <p class="mt-4 text-white/90 max-w-xl">Solución económica y efectiva para delimitar terrenos y disuadir el paso no autorizado. Ideal para complementar otros tipos de cercas.</p>
+        <div class="mt-8 flex flex-col sm:flex-row gap-3">
+          <a href="#cta" class="inline-flex items-center justify-center rounded-xl bg-[var(--brand)] px-6 py-3 font-semibold text-white soft-shadow">Solicitar cotización</a>
+          <a href="#proceso" class="inline-flex items-center justify-center rounded-xl bg-white/10 px-6 py-3 font-semibold text-white ring-1 ring-white/30">Ver proceso</a>
+        </div>
       </div>
     </div>
   </section>
@@ -144,87 +148,8 @@
     </div>
   </section>
 
-  <!-- Aplicaciones -->
-  <section class="py-16">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-      <div class="max-w-2xl mx-auto text-center">
-        <h2 class="text-2xl sm:text-3xl font-bold">Aplicaciones del Alambre de Púas</h2>
-        <p class="mt-2 text-slate-600">Nuestros sistemas son ideales para múltiples usos</p>
-      </div>
-      <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div class="bg-white rounded-2xl p-6 border border-slate-100 soft-shadow">
-          <div class="h-48 rounded-xl overflow-hidden mb-4">
-            <img src="https://images.unsplash.com/photo-1582641098342-de37fb24c0c3?q=80&w=800&auto=format&fit=crop" alt="Delimitación de terrenos" class="w-full h-full object-cover">
-          </div>
-          <h3 class="font-semibold text-lg">Delimitación de Terrenos</h3>
-          <p class="mt-2 text-slate-600">Ideal para marcar límites de propiedades rurales y urbanas de manera clara y efectiva.</p>
-        </div>
-        <div class="bg-white rounded-2xl p-6 border border-slate-100 soft-shadow">
-          <div class="h-48 rounded-xl overflow-hidden mb-4">
-            <img src="https://images.unsplash.com/photo-1621544402533-5ae95109d1f1?q=80&w=800&auto=format&fit=crop" alt="Protección perimetral" class="w-full h-full object-cover">
-          </div>
-          <h3 class="font-semibold text-lg">Protección Perimetral</h3>
-          <p class="mt-2 text-slate-600">Protección eficaz para industrias, bodegas y propiedades que requieren seguridad perimetral.</p>
-        </div>
-        <div class="bg-white rounded-2xl p-6 border border-slate-100 soft-shadow">
-          <div class="h-48 rounded-xl overflow-hidden mb-4">
-            <img src="https://images.unsplash.com/photo-16114c0c114c8b6b3c2cf42c2?q=80&w=800&auto=format&fit=crop" alt="Complemento de seguridad" class="w-full h-full object-cover">
-          </div>
-          <h3 class="font-semibold text-lg">Complemento de Seguridad</h3>
-          <p class="mt-2 text-slate-600">Perfecto para aumentar el nivel de seguridad en cercas existentes como malla ciclónica.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Especificaciones Técnicas -->
-  <section class="py-16 bg-white">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-      <div class="max-w-2xl mx-auto text-center">
-        <h2 class="text-2xl sm:text-3xl font-bold">Especificaciones Técnicas</h2>
-        <p class="mt-2 text-slate-600">Características de nuestro alambre de púas</p>
-      </div>
-      <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div>
-          <h3 class="font-semibold text-lg mb-4">Tipos Disponibles</h3>
-          <ul class="space-y-3">
-            <li class="flex items-start">
-              <svg class="h-5 w-5 text-[var(--brand)] mr-2 shrink-0" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
-              <span><strong>Alambre de púas convencional:</strong> 2 puntas cada 10 cm</span>
-            </li>
-            <li class="flex items-start">
-              <svg class="h-5 w-5 text-[var(--brand)] mr-2 shrink-0" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
-              <span><strong>Alambre de púas de alta densidad:</strong> 4 puntas cada 10 cm</span>
-            </li>
-            <li class="flex items-start">
-              <svg class="h-5 w-5 text-[var(--brand)] mr-2 shrink-0" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
-              <span><strong>Cinta de púas:</strong> Mayor cobertura y efectividad</span>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h3 class="font-semibold text-lg mb-4">Materiales y Tratamientos</h3>
-          <ul class="space-y-3">
-            <li class="flex items-start">
-              <svg class="h-5 w-5 text-[var(--brand)] mr-2 shrink-0" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
-              <span><strong>Galvanizado:</strong> Protección contra la corrosión</span>
-            </li>
-            <li class="flex items-start">
-              <svg class="h-5 w-5 text-[var(--brand)] mr-2 shrink-0" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
-              <span><strong>Acero de alta resistencia:</strong> Mayor durabilidad</span>
-            </li>
-            <li class="flex items-start">
-              <svg class="h-5 w-5 text-[var(--brand)] mr-2 shrink-0" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
-              <span><strong>Tratamiento anticorrosivo adicional:</strong> Para ambientes salinos o húmedos</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Proceso de Instalación -->
-  <section class="py-16">
+  <!-- Proceso de Instalación (reemplaza Aplicaciones) -->
+  <section id="proceso" class="py-16">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div class="max-w-2xl">
         <h2 class="text-2xl sm:text-3xl font-bold">Instalación Profesional de Alambre de Púas</h2>
@@ -265,6 +190,259 @@
           </div>
           <div class="md:w-3/4">
             <p class="text-slate-600">Verificamos que la instalación cumpla con todos los estándares de seguridad y proporcionamos recomendaciones de mantenimiento.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tipos de Alambre de Púas -->
+  <section class="py-16 bg-slate-50">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="max-w-2xl mx-auto text-center">
+        <h2 class="text-2xl sm:text-3xl font-bold">Tipos de Alambre de Púas</h2>
+        <p class="mt-2 text-slate-600">Ofrecemos diferentes configuraciones adaptadas a sus necesidades específicas</p>
+      </div>
+      <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white rounded-2xl p-6 border border-slate-100 soft-shadow service-card">
+          <div class="h-48 rounded-xl overflow-hidden mb-4">
+            <img src="https://images.unsplash.com/photo-1582641098342-de37fb24c0c3?q=80&w=800&auto=format&fit=crop" alt="Alambre de Púas Convencional" class="w-full h-full object-cover">
+          </div>
+          <h3 class="font-semibold text-lg">Alambre de Púas Convencional</h3>
+          <p class="mt-2 text-slate-600">Solución estándar con 2 puntas cada 10 cm. Ideal para delimitación básica de terrenos y propiedades con requerimientos de seguridad moderados.</p>
+          <ul class="mt-3 text-sm text-slate-600 space-y-1">
+            <li>• 2 puntas cada 10 cm</li>
+            <li>• Galvanizado estándar</li>
+            <li>• Aplicación: Delimitación básica</li>
+          </ul>
+        </div>
+        <div class="bg-white rounded-2xl p-6 border border-slate-100 soft-shadow service-card">
+          <div class="h-48 rounded-xl overflow-hidden mb-4">
+            <img src="https://images.unsplash.com/photo-1621544402533-5ae95109d1f1?q=80&w=800&auto=format&fit=crop" alt="Alambre de Púas de Alta Densidad" class="w-full h-full object-cover">
+          </div>
+          <h3 class="font-semibold text-lg">Alambre de Púas de Alta Densidad</h3>
+          <p class="mt-2 text-slate-600">Mayor efectividad con 4 puntas cada 10 cm. Perfecto para áreas que requieren máxima disuasión y protección perimetral reforzada.</p>
+          <ul class="mt-3 text-sm text-slate-600 space-y-1">
+            <li>• 4 puntas cada 10 cm</li>
+            <li>• Galvanizado reforzado</li>
+            <li>• Aplicación: Alta seguridad</li>
+          </ul>
+        </div>
+        <div class="bg-white rounded-2xl p-6 border border-slate-100 soft-shadow service-card">
+          <div class="h-48 rounded-xl overflow-hidden mb-4">
+            <img src="https://images.unsplash.com/photo-16114c0c114c8b6b3c2cf42c2?q=80&w=800&auto=format&fit=crop" alt="Cinta de Púas" class="w-full h-full object-cover">
+          </div>
+          <h3 class="font-semibold text-lg">Cinta de Púas</h3>
+          <p class="mt-2 text-slate-600">Máxima cobertura y efectividad con diseño en espiral. Ideal para complementar cercas existentes o crear barreras de seguridad adicionales.</p>
+          <ul class="mt-3 text-sm text-slate-600 space-y-1">
+            <li>• Mayor cobertura</li>
+            <li>• Instalación rápida</li>
+            <li>• Aplicación: Complemento</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Especificaciones Técnicas Detalladas -->
+  <section class="py-16 bg-white">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="max-w-2xl mx-auto text-center">
+        <h2 class="text-2xl sm:text-3xl font-bold">Especificaciones Técnicas Detalladas</h2>
+        <p class="mt-2 text-slate-600">Información técnica completa de nuestros sistemas de alambre de púas</p>
+      </div>
+      
+      <div class="mt-12 grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <!-- Columna 1: Características Técnicas -->
+        <div class="bg-slate-50 rounded-2xl p-6 border border-slate-100 soft-shadow">
+          <h3 class="font-semibold text-lg mb-4">Características Técnicas</h3>
+          <div class="space-y-4">
+            <div class="flex justify-between py-2 border-b border-slate-100">
+              <span class="text-slate-600">Material principal</span>
+              <span class="font-medium">Acero de bajo carbono</span>
+            </div>
+            <div class="flex justify-between py-2 border-b border-slate-100">
+              <span class="text-slate-600">Diámetro del alambre</span>
+              <span class="font-medium">2.0 - 2.8 mm</span>
+            </div>
+            <div class="flex justify-between py-2 border-b border-slate-100">
+              <span class="text-slate-600">Longitud por rollo</span>
+              <span class="font-medium">200 - 400 metros</span>
+            </div>
+            <div class="flex justify-between py-2 border-b border-slate-100">
+              <span class="text-slate-600">Peso por rollo</span>
+              <span class="font-medium">15 - 30 kg</span>
+            </div>
+            <div class="flex justify-between py-2 border-b border-slate-100">
+              <span class="text-slate-600">Separación entre púas</span>
+              <span class="font-medium">7.5 - 15 cm</span>
+            </div>
+            <div class="flex justify-between py-2 border-b border-slate-100">
+              <span class="text-slate-600">Número de puntas</span>
+              <span class="font-medium">2 o 4 por nudo</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Columna 2: Tratamientos y Acabados -->
+        <div class="bg-slate-50 rounded-2xl p-6 border border-slate-100 soft-shadow">
+          <h3 class="font-semibold text-lg mb-4">Tratamientos y Acabados</h3>
+          <div class="space-y-4">
+            <div class="border-l-4 border-blue-500 pl-4 py-2">
+              <h4 class="font-medium text-slate-800">Galvanizado Clase III</h4>
+              <p class="text-sm text-slate-600 mt-1">Espesor de zinc: 70-85 g/m². Protección contra corrosión por 15+ años en condiciones normales.</p>
+            </div>
+            <div class="border-l-4 border-green-500 pl-4 py-2">
+              <h4 class="font-medium text-slate-800">Galvanizado por Inmersión</h4>
+              <p class="text-sm text-slate-600 mt-1">Proceso completo que cubre toda la superficie del alambre, incluyendo las puntas.</p>
+            </div>
+            <div class="border-l-4 border-purple-500 pl-4 py-2">
+              <h4 class="font-medium text-slate-800">Acero Inoxidable</h4>
+              <p class="text-sm text-slate-600 mt-1">Opción premium para ambientes marinos o altamente corrosivos. Máxima durabilidad.</p>
+            </div>
+            <div class="border-l-4 border-amber-500 pl-4 py-2">
+              <h4 class="font-medium text-slate-800">Recubrimiento PVC</h4>
+              <p class="text-sm text-slate-600 mt-1">Opcional para mayor durabilidad y aspecto estético. Disponible en verde o negro.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Tabla de Configuraciones Estándar -->
+      <div class="mt-8 bg-slate-50 rounded-2xl p-6 border border-slate-100 soft-shadow">
+        <h3 class="font-semibold text-lg mb-4">Configuraciones Estándar</h3>
+        <div class="overflow-x-auto">
+          <table class="w-full text-sm text-left">
+            <thead class="text-xs text-slate-700 uppercase bg-slate-100">
+              <tr>
+                <th class="px-4 py-3">Tipo</th>
+                <th class="px-4 py-3">Puntas por Nudo</th>
+                <th class="px-4 py-3">Separación</th>
+                <th class="px-4 py-3">Aplicación</th>
+                <th class="px-4 py-3">Resistencia</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-b border-slate-200">
+                <td class="px-4 py-3 font-medium">Convencional</td>
+                <td class="px-4 py-3">2</td>
+                <td class="px-4 py-3">10-15 cm</td>
+                <td class="px-4 py-3">Delimitación básica</td>
+                <td class="px-4 py-3">Media</td>
+              </tr>
+              <tr class="border-b border-slate-200">
+                <td class="px-4 py-3 font-medium">Alta Densidad</td>
+                <td class="px-4 py-3">4</td>
+                <td class="px-4 py-3">7.5-10 cm</td>
+                <td class="px-4 py-3">Protección perimetral</td>
+                <td class="px-4 py-3">Alta</td>
+              </tr>
+              <tr class="border-b border-slate-200">
+                <td class="px-4 py-3 font-medium">Cinta de Púas</td>
+                <td class="px-4 py-3">Variable</td>
+                <td class="px-4 py-3">Continua</td>
+                <td class="px-4 py-3">Alta seguridad</td>
+                <td class="px-4 py-3">Muy Alta</td>
+              </tr>
+              <tr>
+                <td class="px-4 py-3 font-medium">Recubierto PVC</td>
+                <td class="px-4 py-3">2 o 4</td>
+                <td class="px-4 py-3">10-15 cm</td>
+                <td class="px-4 py-3">Estética y durabilidad</td>
+                <td class="px-4 py-3">Alta</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Sistemas de Instalación -->
+      <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-slate-50 rounded-2xl p-6 border border-slate-100 soft-shadow">
+          <h3 class="font-semibold text-lg mb-4">Sistemas de Instalación</h3>
+          <div class="space-y-4">
+            <div class="flex items-start">
+              <div class="h-6 w-6 rounded-full bg-blue-100 flex items-center justify-center mr-3 mt-1">
+                <span class="text-blue-600 text-sm font-bold">1</span>
+              </div>
+              <div>
+                <h4 class="font-medium text-slate-800">Sobre Cerca Existente</h4>
+                <p class="text-sm text-slate-600 mt-1">Instalación sobre malla ciclónica o reja para aumentar el nivel de seguridad.</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div class="h-6 w-6 rounded-full bg-green-100 flex items-center justify-center mr-3 mt-1">
+                <span class="text-green-600 text-sm font-bold">2</span>
+              </div>
+              <div>
+                <h4 class="font-medium text-slate-800">Postes y Tensores</h4>
+                <p class="text-sm text-slate-600 mt-1">Sistema independiente con postes de acero o concreto y tensores para máxima estabilidad.</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div class="h-6 w-6 rounded-full bg-red-100 flex items-center justify-center mr-3 mt-1">
+                <span class="text-red-600 text-sm font-bold">3</span>
+              </div>
+              <div>
+                <h4 class="font-medium text-slate-800">Muros y Estructuras</h4>
+                <p class="text-sm text-slate-600 mt-1">Instalación sobre muros de concreto o estructuras existentes con anclajes especiales.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="bg-slate-50 rounded-2xl p-6 border border-slate-100 soft-shadow">
+          <h3 class="font-semibold text-lg mb-4">Accesorios y Opciones</h3>
+          <div class="space-y-3">
+            <div class="flex items-center">
+              <svg class="h-4 w-4 text-[var(--brand)] mr-2" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+              </svg>
+              <span>Postes de acero galvanizado de diferentes alturas</span>
+            </div>
+            <div class="flex items-center">
+              <svg class="h-4 w-4 text-[var(--brand)] mr-2" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+              </svg>
+              <span>Tensores y grapas de sujeción</span>
+            </div>
+            <div class="flex items-center">
+              <svg class="h-4 w-4 text-[var(--brand)] mr-2" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+              </svg>
+              <span>Anclajes químicos para estructuras existentes</span>
+            </div>
+            <div class="flex items-center">
+              <svg class="h-4 w-4 text-[var(--brand)] mr-2" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+              </svg>
+              <span>Señalización de seguridad perimetral</span>
+            </div>
+            <div class="flex items-center">
+              <svg class="h-4 w-4 text-[var(--brand)] mr-2" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+              </svg>
+              <span>Sistemas de tensado profesional</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Especificaciones de Seguridad -->
+      <div class="mt-6 bg-blue-50 rounded-xl p-4 border border-blue-200">
+        <div class="flex">
+          <svg class="h-5 w-5 text-blue-600 mr-2 shrink-0" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+          </svg>
+          <div>
+            <h4 class="font-medium text-blue-800">Certificaciones y Estándares</h4>
+            <ul class="mt-1 text-sm text-blue-700 list-disc list-inside space-y-1">
+              <li>Norma ASTM A121 para alambre de púas galvanizado</li>
+              <li>Norma ISO 1461 para galvanizado por inmersión en caliente</li>
+              <li>Cumplimiento con normativas locales de seguridad perimetral</li>
+              <li>Resistencia certificada a condiciones climáticas adversas</li>
+              <li>Certificación de durabilidad y resistencia a la corrosión</li>
+            </ul>
           </div>
         </div>
       </div>
