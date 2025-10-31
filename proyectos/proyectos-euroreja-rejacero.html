@@ -235,40 +235,26 @@
     }
     
     /* Breadcrumb */
-    .breadcrumb {
-      background-color: #f8fafc;
-      padding: 1rem 0;
-      border-bottom: 1px solid #e2e8f0;
-    }
-    
     .breadcrumb ol {
-      display: flex;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-      font-size: 0.875rem;
-    }
-    
-    .breadcrumb li:not(:last-child)::after {
-      content: ">";
-      margin-left: 0.5rem;
-      color: #64748b;
-    }
-    
-    .breadcrumb a {
-      color: var(--brand);
-      text-decoration: none;
-      transition: color 0.2s;
-    }
-    
-    .breadcrumb a:hover {
-      color: #0da271;
-      text-decoration: underline;
-    }
-    
-    .breadcrumb span {
-      color: #64748b;
-    }
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.breadcrumb li {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 640px) {
+  .breadcrumb ol {
+    font-size: 0.875rem;
+  }
+  
+  .breadcrumb li {
+    margin-bottom: 0.25rem;
+  }
+}
   </style>
 </head>
 <body class="bg-[var(--bg)] text-[var(--ink)]">
@@ -334,12 +320,12 @@
         </a>
 
         <nav class="hidden md:flex items-center gap-8 text-sm" aria-label="Navegación principal">
-          <a href="index.html" class="hover:text-[var(--brand)] transition">Inicio</a>
-          <a href="nosotros.html" class="hover:text-[var(--brand)] transition">Nosotros</a>
-          <a href="servicios.html" class="hover:text-[var(--brand)] transition">Servicios</a>
-          <a href="proyectos.html" class="hover:text-[var(--brand)] transition">Proyectos</a>
-          <a href="proyectos-puas.html" class="hover:text-[var(--brand)] transition font-semibold text-[var(--brand)]">Púas</a>
-          <a href="contacto.html" class="hover:text-[var(--brand)] transition">Contacto</a>
+          <a href="/index.html" class="hover:text-[var(--brand)] transition">Inicio</a>
+          <a href="/nosotros.html" class="hover:text-[var(--brand)] transition">Nosotros</a>
+          <a href="/servicios.html" class="hover:text-[var(--brand)] transition">Servicios</a>
+          <a href="/proyectos.html" class="hover:text-[var(--brand)] transition">Proyectos</a>
+          <a href="/proyectos-puas.html" class="hover:text-[var(--brand)] transition font-semibold text-[var(--brand)]">Púas</a>
+          <a href="/contacto.html" class="hover:text-[var(--brand)] transition">Contacto</a>
           <a href="#cta" class="inline-flex items-center rounded-xl bg-[var(--brand)] px-4 py-2 font-semibold text-white hover:opacity-90 transition soft-shadow">Cotiza ahora</a>
         </nav>
 
@@ -363,38 +349,39 @@
     </div>
   </header>
 
-  <!-- Breadcrumb -->
-  <div class="breadcrumb">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-      <ol>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="proyectos.html">Proyectos</a></li>
-        <li><span>Alambrados de Púas</span></li>
-      </ol>
-    </div>
-  </div>
-
-  <!-- Hero Proyectos Púas -->
-  <section class="relative overflow-hidden" aria-labelledby="hero-title">
+ <section class="relative overflow-hidden" aria-labelledby="hero-title">
     <div class="absolute inset-0 -z-10">
-      <!-- Imagen de fondo específica para alambrados de púas -->
-      <div class="h-full w-full bg-cover bg-center" style="background-image:url('https://images.unsplash.com/photo-1621841951666-1a81dc454a3e?q=80&w=1600&auto=format&fit=crop'); filter:contrast(0.95)" role="img" aria-label="Instalación profesional de alambrado de púas"></div>
+      <!-- Imagen de fondo de stock sugerida -->
+      <div class="h-full w-full bg-cover bg-center" style="background-image:url('/src/img/img-proyectos/cerca-cero-euroreja/img-hero-euro-reja.jpg'); filter:contrast(0.95)" role="img" aria-label="Instalación profesional de cerca perimetral"></div>
       <div class="absolute inset-0 bg-black/40"></div>
     </div>
 
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24 sm:py-28 lg:py-32 text-white">
-      <div class="max-w-2xl">
-        <span class="inline-block rounded-full bg-white/10 px-3 py-1 text-xs font-medium ring-1 ring-white/30 mb-4">Especialidad</span>
-        <h1 id="hero-title" class="text-4xl sm:text-5xl font-extrabold leading-tight">Proyectos de Alambrados de Púas</h1>
-        <p class="mt-4 text-white/90 max-w-xl">Una muestra especializada de nuestro trabajo en instalación de alambrados de púas para seguridad residencial, industrial y agrícola. Soluciones económicas y efectivas.</p>
-        <div class="mt-6">
-          <a href="proyectos.html" class="inline-flex items-center gap-2 text-white/90 hover:text-white transition">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
-            </svg>
-            Volver a todos los proyectos
-          </a>
-        </div>
+      <div class="max-w-screen-sm">
+        <span class="inline-block rounded-full bg-white/10 px-3 py-1 text-xs font-medium ring-1 ring-white/30 mb-4">Especialistas en seguridad</span>
+        <h1 id="hero-title" class="text-3xl sm:text-3xl font-extrabold leading-tight">Proyectos de Euro Reja y Reja Cero</h1>
+        <p class="mt-4 text-white/90 max-w-xl">Descubre nuestra experiencia en instalación de sistemas de seguridad perimetral. Especialistas en Euro Reja, Reja Cero y soluciones de protección residencial e industrial de alta calidad.</p>
+        
+        <!-- Breadcrumb centrado -->
+        <nav class="mt-8 flex justify-center backdrop-blur-2xl" aria-label="Breadcrumb">
+          <ol class="flex flex-wrap items-center justify-center text-sm font-medium text-white/80 bg-white/10 rounded-lg py-2 px-4 backdrop-blur-sm">
+            <li class="inline-flex items-center">
+              <a href="/" class="hover:text-white transition-colors duration-200">Inicio</a>
+            </li>
+            <li class="flex items-center">
+              <svg class="mx-2 h-4 w-4" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+              </svg>
+              <a href="/proyectos" class="hover:text-white transition-colors duration-200">Proyectos</a>
+            </li>
+            <li class="flex items-center" aria-current="page">
+              <svg class="mx-2 h-4 w-4" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+              </svg>
+              <span class="text-white">Euro Reja / Reja Cero</span>
+            </li>
+          </ol>
+        </nav>
       </div>
     </div>
   </section>
@@ -436,47 +423,38 @@
 
   <!-- Galería Mosaico -->
   <section class="py-16 bg-slate-50" aria-labelledby="gallery-title">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-      <h2 id="gallery-title" class="text-2xl sm:text-3xl font-bold text-center">Galería de Proyectos de Alambrados de Púas</h2>
-      <p class="mt-2 text-slate-600 text-center">Haz clic en cualquier imagen para verla en tamaño completo</p>
-      
-      <div class="gallery-grid">
-        <div class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?q=80&w=800&auto=format&fit=crop" alt="Instalación de alambrado de púas residencial con postes de acero" loading="lazy">
-        </div>
-        <div class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1621841957884-0c8e8e8f8f8e?q=80&w=800&auto=format&fit=crop" alt="Alambrado de púas para protección industrial en bodegas" loading="lazy">
-        </div>
-        <div class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?q=80&w=800&auto=format&fit=crop" alt="Detalle de instalación de alambrado de púas con postes de concreto" loading="lazy">
-        </div>
-        <div class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1621841957884-0c8e8e8f8f8e?q=80&w=800&auto=format&fit=crop" alt="Proyecto de alambrado de púas para terreno agrícola extenso" loading="lazy">
-        </div>
-        <div class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?q=80&w=800&auto=format&fit=crop" alt="Alambrado de púas con refuerzo superior para máxima seguridad" loading="lazy">
-        </div>
-        <div class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1621841957884-0c8e8e8f8f8e?q=80&w=800&auto=format&fit=crop" alt="Cerramiento perimetral con alambrado de púas para institución educativa" loading="lazy">
-        </div>
-        <div class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?q=80&w=800&auto=format&fit=crop" alt="Instalación profesional de alambrado de púas con tensores" loading="lazy">
-        </div>
-        <div class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1621841957884-0c8e8e8f8f8e?q=80&w=800&auto=format&fit=crop" alt="Proyecto completo de alambrado de púas con portón de acceso" loading="lazy">
-        </div>
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <h2 id="gallery-title" class="text-2xl sm:text-3xl font-bold text-center">Galería de Proyectos de Malla Eléctrica</h2>
+    <p class="mt-2 text-slate-600 text-center">Haz clic en cualquier imagen para verla en tamaño completo</p>
+    
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+      <div class="gallery-item overflow-hidden rounded-lg shadow-md transition-transform duration-300 hover:scale-105">
+        <img src="/src/img/img-proyectos/cerca-cero-euroreja/IMG-20250815-WA0034 (1).jpg" alt="Instalación de malla eléctrica residencial con postes de acero" loading="lazy" class="w-full h-64 object-cover">
       </div>
-      
-      <div class="mt-10 text-center">
-        <a href="proyectos.html" class="project-button">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
-          </svg>
-          Ver todos los proyectos
-        </a>
+      <div class="gallery-item overflow-hidden rounded-lg shadow-md transition-transform duration-300 hover:scale-105">
+        <img src="/src/img/img-proyectos/cerca-cero-euroreja/IMG-20250815-WA0062 (1).jpg" alt="Sistema de malla eléctrica para protección industrial" loading="lazy" class="w-full h-64 object-cover">
+      </div>
+      <div class="gallery-item overflow-hidden rounded-lg shadow-md transition-transform duration-300 hover:scale-105">
+        <img src="/src/img/img-proyectos/cerca-cero-euroreja/IMG20240919171208.jpg" alt="Detalle de instalación de malla eléctrica con aisladores" loading="lazy" class="w-full h-64 object-cover">
+      </div>
+      <div class="gallery-item overflow-hidden rounded-lg shadow-md transition-transform duration-300 hover:scale-105">
+        <img src="/src/img/img-proyectos/cerca-cero-euroreja/img-hero-euro-reja.jpg" alt="Proyecto de malla eléctrica para centro comercial" loading="lazy" class="w-full h-64 object-cover">
+      </div>
+      <div class="gallery-item overflow-hidden rounded-lg shadow-md transition-transform duration-300 hover:scale-105">
+        <img src="/src/img/img-proyectos/cerca-cero-euroreja/IMG20241024175341_01 (1).jpg" alt="Malla eléctrica con sistema de monitoreo integrado" loading="lazy" class="w-full h-64 object-cover">
       </div>
     </div>
-  </section>
+    
+    <div class="mt-10 text-center">
+      <a href="proyectos.html" class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-md transition-colors duration-300">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+        </svg>
+        Ver todos los proyectos
+      </a>
+    </div>
+  </div>
+</section>
 
   <!-- Lightbox -->
   <div class="lightbox" id="lightbox">
